@@ -8,7 +8,7 @@
         "about-us": "About Us",
         "project-team": "Project team",
         "jonathan-ngien": "Jonathan Ngien",
-        "jane-doe": "Jane Doe",
+        "kaung-zin-ye-naung": "Kaung Zin Ye Naung",
         "johnny-doe": "Johnny Doe",
         "jaeho-jose-kim": "Jaeho (Jose) Kim",
         "bhavina": "Bhavina"
@@ -138,6 +138,14 @@
     {
       "src": "team/johndoe.md",
       "title": "John Doe's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/kaung.md",
+      "title": "Kaung's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
