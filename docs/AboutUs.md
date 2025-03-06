@@ -18,15 +18,6 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](https://github.com/jonzyyyy)]
 * Role: Responsible for filtering guests based on RSVP/Dietary
 
-### Jensen Huang
-
-<img src="images/jensenhuangyankai.png" width="200px">
-
-[[github](http://github.com/jensenhuangyankai)]
-
-* Role: Developer
-* Responsibilities: UI
-
 ### Kaung Zin Ye Naung
 
 <img src="images/kaungzinye.png" width="200px">
