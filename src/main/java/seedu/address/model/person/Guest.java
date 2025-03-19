@@ -18,7 +18,7 @@ public class Guest extends Person {
      */
     public Guest(Name name, Email email, Address address, Phone phone, DietaryRestriction dietaryRestriction,
                  Rsvp rsvp) {
-        super(name, phone, email, address, new HashSet<>());
+        super(name, phone, email, address, new HashSet<>(), new Remark(""));
         this.dietaryRestriction = dietaryRestriction;
         this.rsvp = rsvp;
         this.guestId = generateGuestId(phone);

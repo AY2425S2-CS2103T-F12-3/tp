@@ -43,7 +43,8 @@ public class RsvpListTest {
             new Phone("87654321"),
             new Email("janedoe@example.com"),
             new Address("456 Avenue"),
-            new HashSet<>()
+            new HashSet<>(),
+            new Remark("Some remark")
         );
         assertThrows(IllegalArgumentException.class, () -> rsvpList.add(person));
     }
@@ -61,7 +62,8 @@ public class RsvpListTest {
             new Phone("87654321"),
             new Email("janedoe@example.com"),
             new Address("456 Avenue"),
-            new HashSet<>()
+            new HashSet<>(),
+            new Remark("Some remark")
         );
         assertFalse(rsvpList.contains(person));
     }
@@ -80,7 +82,8 @@ public class RsvpListTest {
             new Phone("87654321"),
             new Email("janedoe@example.com"),
             new Address("456 Avenue"),
-            new HashSet<>()
+            new HashSet<>(),
+            new Remark("Some remark")
         );
         assertThrows(IllegalArgumentException.class, () -> rsvpList.remove(person));
     }

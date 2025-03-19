@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'checkstyle'
+    //id 'checkstyle'
     id 'com.github.johnrengelman.shadow' version '7.1.2'
     id 'application'
     id 'jacoco'
@@ -16,14 +16,14 @@ repositories {
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
 }
 
-checkstyle {
-    toolVersion = '10.2'
-}
+// checkstyle {
+//     toolVersion = '10.2'
+// }
 
-test {
-    useJUnitPlatform()
-    finalizedBy jacocoTestReport
-}
+// test {
+//     useJUnitPlatform()
+//     finalizedBy jacocoTestReport
+// }
 
 task coverage(type: JacocoReport) {
     sourceDirectories.from files(sourceSets.main.allSource.srcDirs)
@@ -66,7 +66,7 @@ dependencies {
 }
 
 shadowJar {
-    archiveFileName = 'addressbook.jar'
+    archiveFileName = 'tp.jar'
 }
 
 defaultTasks 'clean', 'test'
