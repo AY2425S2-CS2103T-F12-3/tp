@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
 import seedu.address.model.person.Address;
+import seedu.address.model.person.Remark;
 import seedu.address.model.person.category.DietaryRestriction;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Guest;
@@ -34,6 +35,7 @@ public class SeeRsvpListCommandTest {
             new Phone("12345678"),
             new Email("johndoe@example.com"),
             new Address("123 Street"),
+                new Remark("remark"),
             new DietaryRestriction("None"),
             new Rsvp(Rsvp.Status.YES));
         model.getCurrentWedding().addGuest(guest);

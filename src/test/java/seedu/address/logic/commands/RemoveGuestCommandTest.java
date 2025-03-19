@@ -10,6 +10,7 @@ import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
 import seedu.address.model.person.Address;
+import seedu.address.model.person.Remark;
 import seedu.address.model.person.category.DietaryRestriction;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Guest;
@@ -36,6 +37,7 @@ public class RemoveGuestCommandTest {
             new Phone("12345678"),
             new Email("johndoe@example.com"),
             new Address("123 Street"),
+            new Remark(""),
             new DietaryRestriction("None"),
             new Rsvp(Rsvp.Status.YES));
         model.getCurrentWedding().addGuest(guest);
@@ -59,6 +61,7 @@ public class RemoveGuestCommandTest {
             new Phone("12345678"),
             new Email("johndoe@example.com"),
             new Address("123 Street"),
+            new Remark(""),
             new DietaryRestriction("None"),
             new Rsvp(Rsvp.Status.YES));
         model.getCurrentWedding().addGuest(guest);
@@ -83,6 +86,7 @@ public class RemoveGuestCommandTest {
             new Phone("12345678"),
             new Email("johndoe@example.com"),
             new Address("123 Street"),
+            new Remark(""),
             new DietaryRestriction("None"),
             new Rsvp(Rsvp.Status.YES));
         RemoveGuestCommand command = new RemoveGuestCommand(new Phone("12345678"), 0);

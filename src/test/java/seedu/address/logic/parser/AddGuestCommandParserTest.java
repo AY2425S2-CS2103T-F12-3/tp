@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.AddGuestCommand;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.person.Address;
+import seedu.address.model.person.Remark;
 import seedu.address.model.person.category.DietaryRestriction;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Guest;
@@ -26,6 +27,7 @@ public class AddGuestCommandParserTest {
                 new Phone("12345678"),
                 new Email("johndoe@example.com"),
                 new Address("123 Street"),
+                new Remark(""),
                 new DietaryRestriction(DietaryRestriction.TypicalRestriction.NONE),
                 new Rsvp(Rsvp.Status.YES));
             AddGuestCommand command = parser.parse(

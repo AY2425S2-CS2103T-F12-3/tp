@@ -27,6 +27,7 @@ public class RsvpListTest {
             new Phone("12345678"),
             new Email("johndoe@example.com"),
             new Address("123 Street"),
+            new Remark("remark"),
             new DietaryRestriction(DietaryRestriction.TypicalRestriction.VEGAN),
             new Rsvp(Rsvp.Status.YES)
         );
@@ -45,6 +46,7 @@ public class RsvpListTest {
             new Phone("87654321"),
             new Email("janedoe@example.com"),
             new Address("456 Avenue"),
+            new Remark("remark"),
             new HashSet<>()
         );
         assertThrows(IllegalArgumentException.class, () -> rsvpList.add(person));
@@ -63,6 +65,7 @@ public class RsvpListTest {
             new Phone("87654321"),
             new Email("janedoe@example.com"),
             new Address("456 Avenue"),
+            new Remark(""),
             new HashSet<>()
         );
         assertFalse(rsvpList.contains(person));
@@ -82,6 +85,7 @@ public class RsvpListTest {
             new Phone("87654321"),
             new Email("janedoe@example.com"),
             new Address("456 Avenue"),
+            new Remark(""),
             new HashSet<>()
         );
         assertThrows(IllegalArgumentException.class, () -> rsvpList.remove(person));

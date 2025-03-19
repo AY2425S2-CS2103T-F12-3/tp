@@ -16,10 +16,11 @@ public class GuestTest {
         Email email = new Email("johndoe@example.com");
         Address address = new Address("123 Street");
         Phone phone = new Phone("12345678");
+        Remark remark = new Remark("");
         DietaryRestriction dietaryRestriction = new DietaryRestriction(DietaryRestriction.TypicalRestriction.VEGAN);
         Rsvp rsvp = new Rsvp(Rsvp.Status.YES);
 
-        Guest guest = new Guest(name, phone, email, address, dietaryRestriction, rsvp);
+        Guest guest = new Guest(name, phone, email, address, remark, dietaryRestriction, rsvp);
 
         assertEquals(name, guest.getName());
         assertEquals(email, guest.getEmail());
@@ -36,9 +37,10 @@ public class GuestTest {
         Email email = new Email("johndoe@example.com");
         Address address = new Address("123 Street");
         Phone phone = new Phone("12345678");
+        Remark remark = new Remark("");
         DietaryRestriction dietaryRestriction = new DietaryRestriction(DietaryRestriction.TypicalRestriction.VEGAN);
         Rsvp rsvp = new Rsvp(Rsvp.Status.YES);
-        Guest guest = new Guest(name, phone, email, address, dietaryRestriction, rsvp);
+        Guest guest = new Guest(name, phone, email, address, remark, dietaryRestriction, rsvp);
         assertEquals(guest, guest);
     }
 
@@ -48,19 +50,21 @@ public class GuestTest {
         Email email1 = new Email("johndoe@example.com");
         Address address1 = new Address("123 Street");
         Phone phone1 = new Phone("12345678");
+        Remark remark1 = new Remark("");
         DietaryRestriction dietaryRestriction1 = new DietaryRestriction(DietaryRestriction.TypicalRestriction.VEGAN);
         Rsvp rsvp1 = new Rsvp(Rsvp.Status.YES);
 
-        Guest guest1 = new Guest(name1, phone1, email1, address1, dietaryRestriction1, rsvp1);
+        Guest guest1 = new Guest(name1, phone1, email1, address1, remark1, dietaryRestriction1, rsvp1);
 
         Name name2 = new Name("Jane Doe");
         Email email2 = new Email("janedoe@example.com");
         Address address2 = new Address("456 Avenue");
         Phone phone2 = new Phone("87654321");
+        Remark remark2 = new Remark("");
         DietaryRestriction dietaryRestriction2 = new DietaryRestriction(DietaryRestriction.TypicalRestriction.HALAL);
         Rsvp rsvp2 = new Rsvp(Rsvp.Status.NO);
 
-        Guest guest2 = new Guest(name2, phone2, email2, address2, dietaryRestriction2, rsvp2);
+        Guest guest2 = new Guest(name2, phone2, email2, address2, remark2,dietaryRestriction2, rsvp2);
 
         assertNotEquals(guest1, guest2);
     }
@@ -71,10 +75,11 @@ public class GuestTest {
         Email email = new Email("johndoe@example.com");
         Address address = new Address("123 Street");
         Phone phone = new Phone("12345678");
+        Remark remark = new Remark("");
         DietaryRestriction dietaryRestriction = new DietaryRestriction(DietaryRestriction.TypicalRestriction.VEGAN);
         Rsvp rsvp = new Rsvp(Rsvp.Status.YES);
 
-        Guest guest = new Guest(name, phone, email, address, dietaryRestriction, rsvp);
+        Guest guest = new Guest(name, phone, email, address, remark, dietaryRestriction, rsvp);
         assertEquals(guest.hashCode(), guest.hashCode());
     }
 
@@ -83,11 +88,12 @@ public class GuestTest {
         Name name = new Name("John Doe");
         Email email = new Email("johndoe@example.com");
         Address address = new Address("123 Street");
+        Remark remark = new Remark("");
         Phone phone = new Phone("12345678");
         DietaryRestriction dietaryRestriction = new DietaryRestriction(DietaryRestriction.TypicalRestriction.VEGAN);
         Rsvp rsvp = new Rsvp(Rsvp.Status.YES);
 
-        Guest guest = new Guest(name, phone, email, address, dietaryRestriction, rsvp);
+        Guest guest = new Guest(name, phone, email, address, remark, dietaryRestriction, rsvp);
         String expectedString =
             "Name: John Doe; Phone: 12345678; Email: johndoe@example.com; "
                 + "Address: 123 Street; Tags: []; Dietary Restriction: VEGAN, RSVP: YES";

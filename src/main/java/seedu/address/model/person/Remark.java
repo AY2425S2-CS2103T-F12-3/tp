@@ -1,7 +1,5 @@
 package seedu.address.model.person;
 
-import static java.util.Objects.requireNonNull;
-
 /**
  * Represents a Person's address in the address book.
  */
@@ -15,7 +13,6 @@ public class Remark {
      * @param remark A valid remark.
      */
     public Remark(String remark) {
-        requireNonNull(remark);
         value = remark;
     }
 

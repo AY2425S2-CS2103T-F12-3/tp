@@ -18,6 +18,7 @@ import org.junit.jupiter.api.Test;
 import seedu.address.commons.core.GuiSettings;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.person.Address;
+import seedu.address.model.person.Remark;
 import seedu.address.model.person.category.DietaryRestriction;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Guest;
@@ -43,6 +44,7 @@ public class ModelManagerTest {
             new Phone("12345678"),
             new Email("johndoe@example.com"),
             new Address("123 Street"),
+            new Remark(""),
             new DietaryRestriction("None"),
             new Rsvp(Rsvp.Status.YES)
         );

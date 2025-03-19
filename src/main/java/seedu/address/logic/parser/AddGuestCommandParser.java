@@ -17,6 +17,7 @@ import seedu.address.model.person.Email;
 import seedu.address.model.person.Guest;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Phone;
+import seedu.address.model.person.Remark;
 import seedu.address.model.person.category.DietaryRestriction;
 import seedu.address.model.person.category.Rsvp;
 
@@ -49,12 +50,13 @@ public class AddGuestCommandParser implements Parser<AddGuestCommand> {
             argMultimap.getValue(PREFIX_EMAIL).get());
         Address address = ParserUtil.parseAddress(
             argMultimap.getValue(PREFIX_ADDRESS).get());
+        Remark remark = new Remark("");
         DietaryRestriction dietaryRestriction = ParserUtil.parseDietaryRestriction(
             argMultimap.getValue(PREFIX_DIETARY_RESTRICTION).get());
         Rsvp rsvp = ParserUtil.parseRsvp(
             argMultimap.getValue(PREFIX_RSVP).get());
 
-        Guest guest = new Guest(name, phone, email, address, dietaryRestriction, rsvp);
+        Guest guest = new Guest(name, phone, email, address, remark, dietaryRestriction, rsvp);
 
         return new AddGuestCommand(guest);
     }
