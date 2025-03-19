@@ -16,4 +16,5 @@ public class CliSyntax {
     public static final Prefix PREFIX_RSVP = new Prefix("r/");
     public static final Prefix PREFIX_CATEGORY = new Prefix("c/");
     public static final Prefix PREFIX_FIELD = new Prefix("f/");
+    public static final Prefix PREFIX_REMARK = new Prefix("r/");
 }
