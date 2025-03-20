@@ -40,7 +40,7 @@
       "src": "DeveloperGuide.md",
       "title": "Developer Guide",
       "headings": {
-        "ab-3-developer-guide": "AB-3 Developer Guide",
+        "weddinghero-developer-guide": "WeddingHero Developer Guide",
         "acknowledgements": "Acknowledgements",
         "setting-up-getting-started": "Setting up, getting started",
         "design": "Design",
@@ -58,12 +58,17 @@
         "product-scope": "Product scope",
         "user-stories": "User stories",
         "use-cases": "Use cases",
+        "use-case-create-a-wedding": "Use case: Create a wedding",
+        "use-case-set-a-wedding": "Use case: Set a wedding",
+        "use-case-wedding-overview": "Use case: Wedding Overview",
+        "use-case-add-a-guest": "Use case: Add a guest",
+        "use-case-delete-a-guest": "Use case: Delete a guest",
+        "use-case-add-a-table": "Use case: Add a table",
+        "use-case-delete-a-table": "Use case: Delete a table",
         "non-functional-requirements": "Non-Functional Requirements",
         "glossary": "Glossary",
-        "glossary-2": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-person": "Deleting a person",
         "saving-data": "Saving data"
       },
       "headingKeywords": {}
@@ -125,10 +130,10 @@
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
-        "archiving-data-files-coming-in-v2-0": "Archiving data files [coming in v2.0]",
+        "automatic-assignment-of-guests-to-tables-when-guest-rsvp-status-is-yes-coming-in-v2-0": "Automatic assignment of guests to tables when guest RSVP status is YES [coming in v2.0]",
         "faq": "FAQ",
         "known-issues": "Known issues",
-        "command-summary": "Command summary"
+        "command-summary": "Command Summary"
       },
       "headingKeywords": {}
     },
