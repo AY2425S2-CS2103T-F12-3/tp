@@ -122,6 +122,7 @@
         "wedding-overview-weddingoverview": "Wedding Overview : weddingOverview",
         "adding-a-person-addguest": "Adding a person: addGuest",
         "deleting-a-person-deleteguest": "Deleting a Person : deleteGuest",
+        "filtering-guests-filterguest": "Filtering Guests : filterGuest",
         "adding-a-table-addtable": "Adding a Table : addTable",
         "deleting-a-table-deletetable": "Deleting a Table : deleteTable",
         "listing-tables-gettables": "Listing Tables : getTables",
