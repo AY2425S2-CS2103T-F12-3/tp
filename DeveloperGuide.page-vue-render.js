@@ -308,10 +308,10 @@ with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Required Tag")]),_
 with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Invalid Phone number")]),_v("\n2b1. If the user enters an invalid phone number containing non numbers (e.g. 8124123A).\n2b2. WeddingHero displays an error message, informing user that numbers are only allowed for phone number.\n2b3. Once valid input is provided, the process resumes at step 3.")])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Invalid Email address")]),_v("\n2c1. If the user enters an invalid email address (e.g. joe@).\n2c2. WeddingHero displays an error message, informing user the requirements for a valid email address."),_c('br'),_v("\n2c3. Once valid input is provided, the process resumes at step 3.")])}
+with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Invalid Email address")]),_v("\n2c1. If the user enters an invalid email address (e.g. joe@).\n2c2. WeddingHero displays an error message, informing user the requirements for a valid email address.\n2c3. Once valid input is provided, the process resumes at step 3.")])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("3c. "),_c('strong',[_v("Duplicate Guest")]),_v("\n3c1. If WeddingHero detects that a guest with the same identifier (e.g. same name) already exists,\nit notifies the user of the duplicate.\n3c2. WeddingHero prompts the user that guest has already been added.\nUse case ends.")])}
+with(this){return _c('p',[_v("3c. "),_c('strong',[_v("Duplicate Person")]),_v("\n3c1. If WeddingHero detects that a guest with the same identifier (e.g. same name) already exists,\nit notifies the user of the duplicate.\n3c2. WeddingHero prompts the user that guest has already been added.\nUse case ends.")])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-delete-a-guest"}},[_v("Use case: Delete a guest"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-delete-a-guest","onclick":"event.stopPropagation()"}})])}
@@ -341,7 +341,7 @@ with(this){return _c('p',[_v("3b. "),_c('strong',[_v("Missing Identifier Tag")])
 with(this){return _c('p',[_v("3c. "),_c('strong',[_v("Invalid Input Text")]),_v("\n3c1. The user enters invalid text that does not conform to the expected format (e.g., contains non-alphanumeric characters).\n3c2. WeddingHero identifies the invalid input and displays an error message indicating that the input is invalid.\n3c3. WeddingHero prompts the user to re-enter a valid identifier.\n3c4. If the user provides a valid input, the process resumes at step 4.")])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("5a. "),_c('strong',[_v("No Matching Guest Found")]),_v("\n5a1. WeddingHero is unable to find any guest matching the provided identifier (name or phone number).\n5a2. WeddingHero informs the user that no matching guest was found.\n5a3. If the user re-enters a valid tag with a different value as an identifier, the process resumes at step 4.\n5a4. If the user changes commands, the use case ends.")])}
+with(this){return _c('p',[_v("5a. "),_c('strong',[_v("No Matching Person Found")]),_v("\n5a1. WeddingHero is unable to find any guest matching the provided identifier (name or phone number).\n5a2. WeddingHero informs the user that no matching guest was found.\n5a3. If the user re-enters a valid tag with a different value as an identifier, the process resumes at step 4.\n5a4. If the user changes commands, the use case ends.")])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-add-a-table"}},[_v("Use case: Add a table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-add-a-table","onclick":"event.stopPropagation()"}})])}
@@ -392,7 +392,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Table ID")]),_v("\n2a1. If the user omits the table ID when entering the command, WeddingHero displays an error message indicating that the table ID is required.\n2a2. WeddingHero prompts the user to re-enter the command with the correct format.\n2a3. Once the correct input is provided, the process resumes at step 3.")])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Table Not Found")]),_v("\n2b1. If WeddingHero is unable to locate a table matching the provided ID, it informs the user that no matching table was found."),_c('br'),_v("\n2b2. WeddingHero prompts the user to either re-enter a valid table ID.\n2b3. If the user provides a valid table ID, the process resumes at step 3. Otherwise, use case ends.")])}
+with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Table Not Found")]),_v("\n2b1. If WeddingHero is unable to locate a table matching the provided ID, it informs the user that no matching table was found.\n2b2. WeddingHero prompts the user to either re-enter a valid table ID.\n2b3. If the user provides a valid table ID, the process resumes at step 3. Otherwise, use case ends.")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('em',[_v("{More to be added}")])])}
@@ -407,7 +407,7 @@ with(this){return _c('ol',[_c('li',[_v("Should work on any mainstream OS as long
 with(this){return _c('h1',{attrs:{"id":"glossary"}},[_v("Glossary"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#glossary","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('strong',[_v("Guest:")]),_v(" An individual invited to attend the wedding.")]),_v(" "),_c('li',[_c('strong',[_v("Table:")]),_v(" A designated seating area at the wedding venue, typically used to group guests together.")]),_v(" "),_c('li',[_c('strong',[_v("Dietary Restriction:")]),_v(" A limitation or specific requirement regarding food consumption, often due to allergies, health conditions, or personal preferences.")]),_v(" "),_c('li',[_c('strong',[_v("RSVP Status:")]),_v(" The response provided by an invited guest indicating whether they will attend the event.")]),_v(" "),_c('li',[_c('strong',[_v("Wedding Planner:")]),_v(" A professional responsible for organizing, coordinating, and managing all aspects of a wedding event.")]),_v(" "),_c('li',[_c('strong',[_v("Vendor (Extension):")]),_v(" A business or individual that supplies services or products—such as catering, photography, or decor—for the wedding.")])])}
+with(this){return _c('ul',[_c('li',[_c('strong',[_v("Person:")]),_v(" An individual invited to attend the wedding.")]),_v(" "),_c('li',[_c('strong',[_v("Table:")]),_v(" A designated seating area at the wedding venue, typically used to group guests together.")]),_v(" "),_c('li',[_c('strong',[_v("Dietary Restriction:")]),_v(" A limitation or specific requirement regarding food consumption, often due to allergies, health conditions, or personal preferences.")]),_v(" "),_c('li',[_c('strong',[_v("RSVP Status:")]),_v(" The response provided by an invited guest indicating whether they will attend the event.")]),_v(" "),_c('li',[_c('strong',[_v("Wedding Planner:")]),_v(" A professional responsible for organizing, coordinating, and managing all aspects of a wedding event.")]),_v(" "),_c('li',[_c('strong',[_v("Vendor (Extension):")]),_v(" A business or individual that supplies services or products—such as catering, photography, or decor—for the wedding.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h2',{attrs:{"id":"appendix-instructions-for-manual-testing"}},[_c('strong',[_v("Appendix: Instructions for manual testing")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#appendix-instructions-for-manual-testing","onclick":"event.stopPropagation()"}})])}
@@ -425,6 +425,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases … }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Thu, 20 Mar 2025, 22:50:30 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Thu, 27 Mar 2025, 19:25:24 GMT+8]")])])])}
 }];
   
