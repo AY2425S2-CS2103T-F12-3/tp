@@ -14,11 +14,12 @@ Class UserPrefs
 
 Class UniquePersonList
 Class Person
-Class Address
-Class Email
 Class Name
+Class Email
 Class Phone
-Class Tag
+Class Rsvp
+Class Address
+Class DietaryRestriction
 
 Class I #FFFFFF
 }
@@ -39,9 +40,11 @@ AddressBook *--> "1" UniquePersonList
 UniquePersonList --> "~* all" Person
 Person *--> Name
 Person *--> Phone
-Person *--> Email
 Person *--> Address
-Person *--> "*" Tag
+Person *--> Email
+Person *--> DietaryRestriction
+Person *--> Rsvp
+
 
 Person -[hidden]up--> I
 UniquePersonList -[hidden]right-> I
@@ -49,6 +52,8 @@ UniquePersonList -[hidden]right-> I
 Name -[hidden]right-> Phone
 Phone -[hidden]right-> Address
 Address -[hidden]right-> Email
+Email -[hidden]right-> DietaryRestriction
+DietaryRestriction -[hidden]right-> Rsvp
 
 ModelManager --> "~* filtered" Person
 @enduml
