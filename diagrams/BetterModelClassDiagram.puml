@@ -4,14 +4,22 @@ skinparam arrowThickness 1.1
 skinparam arrowColor MODEL_COLOR
 skinparam classBackgroundColor MODEL_COLOR
 
-AddressBook *-right-> "1" UniquePersonList
-UniquePersonList -right-> Person
+AddressBook -right-> "1" Wedding
+AddressBook -right-> "1" UniqueTableList
+AddressBook -right-> "1" UniquePersonList
+AddressBook -right-> "1" UniqueWeddingList
+UniquePersonList *--> Person
+UniqueTableList *--> Table
+UniqueWeddingList *--> Wedding
+Wedding --> UniqueTableList
+Wedding --> UniquePersonList
+Table *-> UniquePersonList
 
-Person *--> Name
-Person *--> Phone
-Person *--> Email
-Person *--> Address
-Person *--> DietaryRestriction
-Person *--> Rsvp
+Person --> Name
+Person --> Phone
+Person --> Email
+Person --> Address
+Person --> DietaryRestriction
+Person --> Rsvp
 
 @enduml
