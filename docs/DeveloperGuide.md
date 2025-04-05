@@ -286,7 +286,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 | ***      | wedding planner                                         | decide how many guests should be seated at one table                                           | customise it to my clients’ needs                                                                              |
 | ***      | wedding planner                                         | view the entire table list quickly                                                             | quickly see the list of tables and their capacities                                                           |
 | **       | organised wedding planner                               | filter guests based on their dietary restrictions and RSVP status                              | view guests based on a specific category                                                                       |
-| **       | wedding planner                                         | leave notes and comments on tasks                                                              | my team stays aligned without needing endless back-and-forth messages                                         |
 | *        | forgetful wedding planner                               | mark the status of the vendor list                                                             | keep track of whether a vendor has confirmed                                                                   |
 | *        | detailed wedding planner                                | see a list of upcoming tasks that are most urgent                                              | pay attention to them first                                                                                    |
 | *        | wedding planner                                         | create a library of preferred vendors and pricing details                                      | easily recommend the best options to my clients                                                                |
@@ -461,7 +460,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1. User decides to add a new table.
-2. User enters the command `addTable tableID/4 8` with the desired table's ID and capacity.
+2. User enters the command `addTable tid/4 8` with the desired table's ID and capacity.
 3. WeddingHero validates that the table ID is unique and that the capacity is a valid positive integer.
 4. WeddingHero adds the table to the current wedding selected by `setWedding`.
 5. WeddingHero displays a confirmation message indicating that the table has been successfully added.
@@ -495,7 +494,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1. User decides to delete an existing table.
-2. User enters the command `deleteTable tableID/3` with the desired table's ID.
+2. User enters the command `deleteTable tid/3` with the desired table's ID.
 3. WeddingHero validates that the table ID is provided.
 4. WeddingHero searches for the table matching the provided ID.
 5. If a matching table is found, WeddingHero prompts the user to confirm the deletion.

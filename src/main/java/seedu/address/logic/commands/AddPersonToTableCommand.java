@@ -28,13 +28,11 @@ public class AddPersonToTableCommand extends Command {
         + "Parameters: "
         + "[" + PREFIX_NAME + "NAME] "
         + "[" + PREFIX_TABLE_ID + "TABLE ID]\n"
-        + "Example: " + COMMAND_WORD
-        + PREFIX_NAME + "John Doe "
-        + PREFIX_TABLE_ID + "2";
+        + "Example: " + COMMAND_WORD + " "
+        + PREFIX_NAME + " John Doe "
+        + PREFIX_TABLE_ID + " 2";
 
     public static final String MESSAGE_ADD_GUEST_TO_TABLE_SUCCESS = "Added Person: %s to Table: %d";
-    public static final String MESSAGE_TABLE_NOT_FOUND = "Table with id %d not found!";
-    public static final String MESSAGE_TABLE_FULL = "Table with ID %d is full!";
 
 
     private final Name guestName;
@@ -50,32 +48,6 @@ public class AddPersonToTableCommand extends Command {
         this.guestName = guestName;
         this.newTableId = newTableId;
     }
-
-    // @Override
-    // public CommandResult execute(Model model) throws CommandException {
-    //     requireNonNull(model);
-    //
-    //     if (!model.hasCurrentWedding()) {
-    //         throw new CommandException("No current wedding set. Please use 'setWedding' first.");
-    //     }
-    //
-    //     try {
-    //         Person personToAdd = model.findPersonByName(guestName);
-    //
-    //         model.addPersonToTableById(personToAdd, newTableId);
-    //
-    //         return new CommandResult(String.format(MESSAGE_ADD_GUEST_TO_TABLE_SUCCESS,
-    //                 personToAdd.getName().fullName, newTableId));
-    //
-    //     } catch (PersonNotFoundException e) {
-    //         throw new CommandException(String.format("Person '%s' not found in the guest list.",
-    //         guestName.fullName));
-    //     } catch (TableNotFoundException e) {
-    //         throw new CommandException(String.format(MESSAGE_TABLE_NOT_FOUND, newTableId));
-    //     } catch (TableFullException e) {
-    //         throw new CommandException(String.format(MESSAGE_TABLE_FULL, newTableId));
-    //     }
-    // }
 
     @Override
     public CommandResult execute(Model model) throws CommandException {

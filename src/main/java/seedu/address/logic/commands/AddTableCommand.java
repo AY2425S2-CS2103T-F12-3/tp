@@ -41,6 +41,10 @@ public class AddTableCommand extends Command {
     public CommandResult execute(Model model) throws CommandException {
         requireNonNull(model);
 
+        if (capacity > 100) {
+            throw new CommandException("Table capacity cannot exceed 100 people.");
+        }
+
         if (model.getCurrentWedding() == null) {
             throw new CommandException(MESSAGE_NO_CURRENT_WEDDING);
         }

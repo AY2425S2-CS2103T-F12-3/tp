@@ -92,7 +92,7 @@ public class AddPersonToTableCommandTest {
 
     @Test
     public void execute_tableFull_throwsCommandException() throws Exception {
-        // Fill the table with capacity 1
+
         Person other = new Person(
                 new Name("Bob"),
                 new Phone("99999999"),

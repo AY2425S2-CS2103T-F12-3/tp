@@ -28,15 +28,28 @@ public class AddTableCommandTest {
         assertEquals(AddTableCommand.MESSAGE_NO_CURRENT_WEDDING, exception.getMessage());
     }
 
+
+    @Test
+    public void execute_tableCapacityExceedsLimit_throwsCommandException() {
+        int overCapacity = 101;
+        int tableId = 1;
+
+        AddTableCommand command = new AddTableCommand(tableId, overCapacity);
+        Model model = new ModelManager();
+
+        CommandException thrown = assertThrows(CommandException.class, () -> command.execute(model));
+        assertEquals("Table capacity cannot exceed 100 people.", thrown.getMessage());
+    }
+
     @Test
     public void execute_duplicateTableId_throwsCommandException() throws Exception {
         Wedding wedding = new Wedding("Test Wedding");
         model.addWedding(wedding);
         model.setCurrentWedding(wedding);
 
-        model.addTable(new Table(1, 6)); // add initial table
+        model.addTable(new Table(1, 6));
 
-        AddTableCommand command = new AddTableCommand(1, 8); // duplicate ID
+        AddTableCommand command = new AddTableCommand(1, 8);
 
         CommandException exception = assertThrows(CommandException.class, () -> command.execute(model));
         assertEquals(String.format(AddTableCommand.MESSAGE_DUPLICATE_TABLE, 1), exception.getMessage());
@@ -120,26 +133,4 @@ public class AddTableCommandTest {
                 exception.getMessage());
     }
 
-    // @Test
-    // public void execute_maxIntegerCapacity_addsTableSuccessfully() throws Exception {
-    //     Wedding wedding = new Wedding("Big Wedding");
-    //     model.addWedding(wedding);
-    //     model.setCurrentWedding(wedding);
-    //
-    //     AddTableCommand command = new AddTableCommand(99, Integer.MAX_VALUE);
-    //     CommandResult result = command.execute(model);
-    //     assertEquals(String.format(AddTableCommand.MESSAGE_SUCCESS, 99, Integer.MAX_VALUE),
-    //     result.getFeedbackToUser());
-    // }
-
-    // @Test
-    // public void execute_tableIdOne_valid_success() throws Exception {
-    //     Wedding wedding = new Wedding("Boundary Test Wedding");
-    //     model.addWedding(wedding);
-    //     model.setCurrentWedding(wedding);
-    //
-    //     AddTableCommand command = new AddTableCommand(1, 5);
-    //     CommandResult result = command.execute(model);
-    //     assertEquals(String.format(AddTableCommand.MESSAGE_SUCCESS, 1, 5), result.getFeedbackToUser());
-    // }
 }

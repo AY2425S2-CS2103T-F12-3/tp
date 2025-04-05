@@ -84,14 +84,14 @@ traditional mouse-based applications.
 4. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar WeddingHero.jar`
    command to run the application.<br>
    A GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.<br>
-   
+
 <img src="images/Ui.png" alt="Ui" style="max-width: 75%; height: auto;" />
 
 
 5. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will
    open the help window.<br>
 - `addPerson n/John Doe p/98765432 e/johnd@example.com a/John street, block 123, #01-01 d/None r/YES` : Adds a person named John Doe with RSVP status and dietary preference to the active wedding.
-- `createWedding n/Jack and Jill's Wedding` : Creates a new wedding called "Jack and Jill's Wedding". 
+- `createWedding n/Jack and Jill's Wedding` : Creates a new wedding called "Jack and Jill's Wedding".
 - `exit` : Exits the application.
 
 
@@ -142,11 +142,11 @@ Wedding Hero helps you manage **multiple weddings** with ease by using a **“se
 
 1. **Create a wedding** using the `createWedding` command.
 2. **Set the wedding as active** using the `setWedding` command.
-3. Once a wedding is set as active, all operations like adding persons, tables, or assigning seats apply **only to that 
+3. Once a wedding is set as active, all operations like adding persons, tables, or assigning seats apply **only to that
    active wedding**.
 4. You can view and manage each wedding’s persons, tables, and RSVP details independently.
 
->  **Note:** You can only interact with one wedding at a time. You must `setWedding` before performing most other 
+>  **Note:** You can only interact with one wedding at a time. You must `setWedding` before performing most other
 > commands (e.g., `addPerson`, `addTable`, etc.).
 
 ---
@@ -336,7 +336,7 @@ filterPersons [d/DIETARYRESTRICTION] [r/RSVP]
 ```
 - Both parameters are optional for this command.
 - Note that you can only key in one of each parameter for this command.
-- Using invalid prefixes such as `n/NAME` will be treated as `filterPersons` as if no prefixes are given 
+- Using invalid prefixes such as `n/NAME` will be treated as `filterPersons` as if no prefixes are given
 - **Dietary Restriction Filter:** Use the prefix `d/` followed by a valid dietary restriction value
   (e.g., `VEGAN`, `VEGETARIAN`). Include this if you want to filter persons based on dietary needs.
 - **RSVP Filter:** Use the prefix `r/` followed by a valid RSVP status (e.g., `YES`, `NO`).
@@ -474,13 +474,13 @@ the acceptable range). Therefore, edit the data file only if you are confident t
 
 ### Glossary
 
-- **Active Wedding**: The currently selected wedding that all actions (e.g., adding people or tables) apply to. You 
+- **Active Wedding**: The currently selected wedding that all actions (e.g., adding people or tables) apply to. You
   must use the `setWedding` command to set an active wedding.
-  
+
 - **Table ID**: A unique integer identifier (e.g., `1`, `5`, `12`) given to each table during the `addTable` command.
   Used for assigning and locating tables.
 
-- **Dietary Restriction**: Describes food requirements or allergies of a person. Acceptable values include: `NONE`, 
+- **Dietary Restriction**: Describes food requirements or allergies of a person. Acceptable values include: `NONE`,
   `VEGETARIAN`, `VEGAN`, `HALAL`, `SHELLFISH`, `PEANUTS`, `FISH`, `EGGS`, `SOY`, `SESAME`.
 
 - **RSVP**: Indicates whether a person has responded to an invitation. Valid values: `YES`, `NO`, `NO_RESPONSE`.
@@ -521,3 +521,4 @@ the data of your previous WeddingHero home folder.
 | **getTables**             | `getTables`<br>Example: `getTables`                                                                                                                                  |
 | **Help**                  | `Help`                                                                                                                                                               |
 | **exit**                  | `exit`                                     
+
