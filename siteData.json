@@ -115,7 +115,6 @@
       "headings": {
         "wedding-hero-user-guide": "Wedding Hero User Guide",
         "key-features": "Key Features",
-        "if-you-re-comfortable-typing-quickly-wedding-hero-empowers-you-to-execute-your-planning-tasks-more-efficiently-than-traditional-mouse-based-applications": "If you're comfortable typing quickly, Wedding Hero empowers you to execute your planning tasks more efficiently than\ntraditional mouse-based applications.",
         "table-of-contents": "Table of Contents",
         "getting-started": "Getting Started",
         "using-wedding-hero": "Using Wedding Hero",
@@ -141,7 +140,6 @@
         "adding-a-person-addperson": "Adding a person: addPerson",
         "deleting-a-person-deleteperson": "Deleting a Person : deletePerson",
         "filtering-persons-filterpersons": "Filtering Persons: filterPersons",
-        "showing-rsvp-list-seersvplist": "Showing RSVP List : seeRSVPList",
         "managing-tables-2": "Managing Tables",
         "adding-a-table-addtable": "Adding a Table : addTable",
         "deleting-a-table-deletetable": "Deleting a Table : deleteTable",
@@ -156,7 +154,6 @@
         "glossary": "Glossary",
         "faq": "FAQ",
         "known-issues": "Known issues",
-        "planned-enhancements": "Planned Enhancements",
         "command-summary": "Command Summary"
       },
       "headingKeywords": {}
