@@ -1,6 +1,7 @@
 package seedu.address.logic.commands;
 
 import static java.util.Objects.requireNonNull;
+import static seedu.address.logic.Messages.MESSAGE_NO_CURRENT_WEDDING;
 
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
@@ -22,8 +23,6 @@ public class AddPersonCommand extends Command {
 
     public static final String MESSAGE_SUCCESS = "Person added to wedding: %1$s";
 
-    public static final String MESSAGE_NO_WEDDING = "No wedding is currently set. Please set a wedding before adding a "
-        + "person.";
     private final Person person;
     /**
      * Creates an AddGuestCommand to add the specified {@code Person} to the rsvp list in the current wedding.
@@ -44,12 +43,12 @@ public class AddPersonCommand extends Command {
         requireNonNull(model);
         try {
             model.addPerson(person);
+            return new CommandResult(String.format(MESSAGE_SUCCESS, person));
         } catch (NoCurrentWeddingException e) {
-            throw new CommandException(MESSAGE_NO_WEDDING);
+            throw new CommandException(MESSAGE_NO_CURRENT_WEDDING);
         } catch (DuplicatePersonException e) {
             throw new CommandException(MESSAGE_DUPLICATE_PERSON);
         }
-        return new CommandResult(String.format(MESSAGE_SUCCESS, person));
     }
 
     @Override

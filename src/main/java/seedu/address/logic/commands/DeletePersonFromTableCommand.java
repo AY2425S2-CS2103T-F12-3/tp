@@ -1,12 +1,14 @@
 package seedu.address.logic.commands;
 
 import static java.util.Objects.requireNonNull;
+import static seedu.address.logic.Messages.MESSAGE_NO_CURRENT_WEDDING;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_TABLE_ID;
 
 import seedu.address.commons.util.ToStringBuilder;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
+import seedu.address.model.exceptions.NoCurrentWeddingException;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 
@@ -49,15 +51,15 @@ public class DeletePersonFromTableCommand extends Command {
     public CommandResult execute(Model model) throws CommandException {
         requireNonNull(model);
 
-        if (!model.hasCurrentWedding()) {
-            throw new CommandException("No current wedding set. Please use 'setWedding' first.");
-        }
+        try {
+            Person guestToRemove = model.findPersonByName(guestName); // throws CommandException
+            model.deletePersonFromTableById(guestToRemove, oldTableId); // throws CommandException
 
-        Person guestToRemove = model.findPersonByName(guestName); // throws CommandException
-        model.deletePersonFromTableById(guestToRemove, oldTableId); // throws CommandException
-
-        return new CommandResult(String.format(MESSAGE_REMOVED_GUEST_FROM_TABLE_SUCCESS,
+            return new CommandResult(String.format(MESSAGE_REMOVED_GUEST_FROM_TABLE_SUCCESS,
                 guestToRemove.getName().fullName, oldTableId));
+        } catch (NoCurrentWeddingException ncwe) {
+            throw new CommandException(MESSAGE_NO_CURRENT_WEDDING);
+        }
     }
 
 

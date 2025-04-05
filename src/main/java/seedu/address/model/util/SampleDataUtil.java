@@ -51,15 +51,17 @@ public class SampleDataUtil {
 
     public static ReadOnlyAddressBook getSampleAddressBook() {
         AddressBook sampleAb = new AddressBook();
-        sampleAb.addWedding(new Wedding("John and Jane"));
-        sampleAb.setCurrentWeddingByName("John and Jane");
-        sampleAb.addTable(new Table(1, 20));
-        sampleAb.addTable(new Table(2, 20));
+        Wedding sampleWedding = new Wedding("John and Jane");
+        sampleWedding.addTable(new Table(1, 20));
+        sampleWedding.addTable(new Table(2, 20));
 
         for (Person samplePerson : getSamplePersons()) {
-            sampleAb.addPerson(samplePerson);
-            sampleAb.addPersonToTableById(samplePerson, 1);
+            sampleWedding.addPerson(samplePerson);
+            sampleWedding.addPersonToTableById(samplePerson, 1);
         }
+
+        sampleAb.addWedding(sampleWedding);
+        sampleAb.setCurrentWeddingByName("John and Jane");
         return sampleAb;
     }
 

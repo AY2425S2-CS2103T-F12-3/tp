@@ -14,6 +14,7 @@ import javafx.collections.transformation.FilteredList;
 import seedu.address.commons.core.GuiSettings;
 import seedu.address.commons.core.LogsCenter;
 import seedu.address.logic.commands.exceptions.CommandException;
+import seedu.address.model.exceptions.NoCurrentWeddingException;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.exceptions.PersonNotFoundException;
@@ -288,17 +289,22 @@ public class ModelManager implements Model {
     @Override
     public void setCurrentWedding(Wedding wedding) {
         requireNonNull(wedding);
-        Wedding oldWedding = addressBook.getCurrentWedding();
-        addressBook.setCurrentWedding(wedding);
-        pcs.firePropertyChange("currentWedding", oldWedding, wedding);
+        try {
+            Wedding oldWedding = addressBook.getCurrentWedding();
+            addressBook.setCurrentWedding(wedding);
+            pcs.firePropertyChange("currentWedding", oldWedding, wedding);
+        } catch (NoCurrentWeddingException ncwe) {
+            addressBook.setCurrentWedding(wedding);
+            pcs.firePropertyChange("currentWedding", null, wedding);
+        }
     }
 
     @Override
     public void setCurrentWeddingByName(String weddingName) {
-        Wedding oldWedding = addressBook.getCurrentWedding();
-        addressBook.setCurrentWeddingByName(weddingName);
-        Wedding newWedding = addressBook.getCurrentWedding();
-        pcs.firePropertyChange("currentWedding", oldWedding, newWedding);
+        requireNonNull(weddingName);
+
+        Wedding weddingWithName = findWeddingByName(weddingName);
+        setCurrentWedding(weddingWithName);
     }
 
     public void addPropertyChangeListener(PropertyChangeListener listener) {

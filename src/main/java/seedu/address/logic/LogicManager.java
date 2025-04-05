@@ -18,6 +18,7 @@ import seedu.address.logic.parser.AddressBookParser;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.Model;
 import seedu.address.model.ReadOnlyAddressBook;
+import seedu.address.model.exceptions.NoCurrentWeddingException;
 import seedu.address.model.person.Person;
 import seedu.address.model.table.Table;
 import seedu.address.model.wedding.Wedding;
@@ -116,10 +117,10 @@ public class LogicManager implements Logic {
      * Updates the wedding name property based on the current wedding in the model
      */
     private void updateWeddingNameProperty() {
-        Wedding currentWedding = model.getCurrentWedding();
-        if (currentWedding != null) {
+        try {
+            Wedding currentWedding = model.getCurrentWedding();
             weddingNameProperty.set(currentWedding.getName());
-        } else {
+        } catch (NoCurrentWeddingException ncwe) {
             weddingNameProperty.set("Not Set");
         }
     }

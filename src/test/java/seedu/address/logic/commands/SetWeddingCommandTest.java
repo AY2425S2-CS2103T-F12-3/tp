@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import seedu.address.logic.Messages;
 import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
 import seedu.address.model.wedding.Wedding;
@@ -41,7 +42,7 @@ public class SetWeddingCommandTest {
         // Then, attempt to set a **different** wedding, which should fail
         SetWeddingCommand command = new SetWeddingCommand("New Wedding");
         CommandResult result = command.execute(model);
-        assertEquals(String.format(SetWeddingCommand.MESSAGE_WEDDING_MISSING, "New Wedding"),
+        assertEquals(String.format(Messages.MESSAGE_UNKNOWN_WEDDING_NAME, "New Wedding"),
                 result.getFeedbackToUser());
     }
 }
