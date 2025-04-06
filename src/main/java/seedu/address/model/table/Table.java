@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Objects;
 
 import javafx.collections.ObservableList;
-import seedu.address.logic.Messages;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.UniquePersonList;
@@ -23,7 +22,7 @@ public final class Table {
 
     public static final String ID_CONSTRAINTS = "The table ID should be a positive integer";
     public static final String CAPACITY_CONSTRAINTS = "The table capacity should be a positive integer";
-    public static final int MAX_CAPACITY = 100;
+    public static final int MAX_CAPACITY = 10000;
 
     /** The unique identifier for the table. */
     private final int tableId;
@@ -42,11 +41,14 @@ public final class Table {
      * @throws IllegalArgumentException if {@code tableId} or {@code capacity} is not positive.
      */
     public Table(int tableId, int capacity) {
-        if (tableId < 1 || tableId > 100) {
-            throw new IllegalArgumentException(Messages.MESSAGE_INVALID_TABLE_ID);
+        if (tableId <= 0) {
+            throw new IllegalArgumentException(ID_CONSTRAINTS);
         }
-        if (capacity < 1 || capacity > 100) {
-            throw new IllegalArgumentException(Messages.MESSAGE_INVALID_TABLE_CAPACITY);
+        if (capacity <= 0) {
+            throw new IllegalArgumentException(CAPACITY_CONSTRAINTS);
+        }
+        if (capacity > MAX_CAPACITY) {
+            throw new IllegalArgumentException("The table capacity exceeds the allowed maximum of " + MAX_CAPACITY);
         }
         this.tableId = tableId;
         this.capacity = capacity;

@@ -14,9 +14,9 @@ public class SetWeddingCommandParserTest {
 
     @Test
     public void parse_validArgs_returnsSetWeddingCommand() throws Exception {
-        String validArgs = "setWedding n/John and Jane's Wedding";
+        String validArgs = "Wedding Name";
         SetWeddingCommand command = parser.parse(validArgs);
-        assertEquals(new SetWeddingCommand("John and Jane's Wedding"), command);
+        assertEquals(new SetWeddingCommand(validArgs), command);
     }
 
     @Test

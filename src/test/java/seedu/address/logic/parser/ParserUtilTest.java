@@ -263,8 +263,8 @@ public class ParserUtilTest {
     }
 
     @Test
-    public void parseWeddingName_empty_throwsParserException() throws Exception {
-        assertThrows(ParseException.class, () -> ParserUtil.parseWeddingName("   "));
+    public void parseWeddingName_empty_returnsEmptyString() throws Exception {
+        assertEquals("", ParserUtil.parseWeddingName("   "));
     }
 
     @Test

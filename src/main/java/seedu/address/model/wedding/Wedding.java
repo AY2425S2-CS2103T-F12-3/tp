@@ -90,9 +90,6 @@ public class Wedding {
      */
     public void deletePerson(Person person) {
         uniquePersonList.delete(person);
-        if (person.isSeated()) {
-            deletePersonFromTableById(person, person.getTableId());
-        }
     }
 
     /**

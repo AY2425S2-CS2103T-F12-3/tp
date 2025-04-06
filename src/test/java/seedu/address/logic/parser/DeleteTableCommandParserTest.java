@@ -11,6 +11,12 @@ import seedu.address.logic.parser.exceptions.ParseException;
 public class DeleteTableCommandParserTest {
     private final DeleteTableCommandParser parser = new DeleteTableCommandParser();
 
+    // @Test
+    // public void parse_validPrefixed_success() throws Exception {
+    //     DeleteTableCommand command = parser.parse(" tableId/4");
+    //     assertEquals(new DeleteTableCommand(4), command);
+    // }
+
     @Test
     public void parse_validRaw_success() throws Exception {
         DeleteTableCommand command = parser.parse("4");
@@ -19,27 +25,17 @@ public class DeleteTableCommandParserTest {
 
     @Test
     public void parse_missingValuePrefixed_throwsParseException() {
-        assertThrows(ParseException.class, () -> parser.parse("tid/"));
+        assertThrows(ParseException.class, () -> parser.parse("tableId/"));
     }
 
     @Test
     public void parse_nonIntegerPrefixed_throwsParseException() {
-        assertThrows(ParseException.class, () -> parser.parse("tid/abc"));
+        assertThrows(ParseException.class, () -> parser.parse("tableId/abc"));
     }
 
     @Test
     public void parse_negativeIntegerPrefixed_throwsParseException() {
-        assertThrows(ParseException.class, () -> parser.parse("tid/-1"));
-    }
-
-    @Test
-    public void parse_outOfBoundsIntegerPrefixed_throwsParseException() {
-        assertThrows(ParseException.class, () -> parser.parse("tid/1000"));
-    }
-
-    @Test
-    public void parse_zeroPrefixed_throwsParseException() {
-        assertThrows(ParseException.class, () -> parser.parse("tid/0"));
+        assertThrows(ParseException.class, () -> parser.parse("tableId/-1"));
     }
 
     @Test

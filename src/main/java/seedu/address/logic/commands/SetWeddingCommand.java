@@ -1,9 +1,7 @@
 package seedu.address.logic.commands;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.address.logic.Messages.MESSAGE_UNKNOWN_WEDDING_NAME;
 
-import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 import seedu.address.model.wedding.Wedding;
 import seedu.address.model.wedding.exceptions.WeddingNotFoundException;
@@ -15,12 +13,18 @@ public class SetWeddingCommand extends Command {
 
     public static final String COMMAND_WORD = "setWedding";
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Sets the current wedding.\n"
-            + "Parameters: n/NAME\n"
-            + "Example: " + COMMAND_WORD + " n/John and Jane's Wedding";
+            + "Parameters: WEDDING_NAME\n"
+            + "Example: " + COMMAND_WORD + " John and Jane's Wedding";
 
     public static final String MESSAGE_SUCCESS = "Current wedding set to: %1$s";
-
+    public static final String MESSAGE_WEDDING_ALREADY_EXISTS =
+            "A different wedding exists. Delete the current wedding first.";
+    public static final String MESSAGE_WEDDING_ALREADY_SET =
+            "The wedding is already set to: %1$s";
+    public static final String MESSAGE_WEDDING_MISSING =
+        "There is no wedding with the name: %s";
     public static final String MESSAGE_INVALID_NAME = "Wedding name cannot be empty or just spaces.";
+
 
     private final String weddingName;
 
@@ -38,7 +42,7 @@ public class SetWeddingCommand extends Command {
     }
 
     @Override
-    public CommandResult execute(Model model) throws CommandException {
+    public CommandResult execute(Model model) {
         requireNonNull(model);
 
         try {
@@ -47,7 +51,7 @@ public class SetWeddingCommand extends Command {
             return new CommandResult(String.format(MESSAGE_SUCCESS, existingWedding.getName()));
 
         } catch (WeddingNotFoundException wnfe) {
-            throw new CommandException(String.format(MESSAGE_UNKNOWN_WEDDING_NAME, weddingName));
+            return new CommandResult(String.format(MESSAGE_WEDDING_MISSING, weddingName));
         }
     }
 

@@ -2,12 +2,10 @@ package seedu.address.logic.commands;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static seedu.address.logic.Messages.MESSAGE_UNKNOWN_TABLE_ID;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.Messages;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
@@ -31,7 +29,7 @@ public class DeleteTableCommandTest {
         DeleteTableCommand command = new DeleteTableCommand(1);
 
         CommandException exception = assertThrows(CommandException.class, () -> command.execute(model));
-        assertEquals(Messages.MESSAGE_NO_CURRENT_WEDDING, exception.getMessage());
+        assertEquals(DeleteTableCommand.MESSAGE_NO_CURRENT_WEDDING, exception.getMessage());
     }
 
     @Test
@@ -43,7 +41,7 @@ public class DeleteTableCommandTest {
         DeleteTableCommand command = new DeleteTableCommand(-2); // invalid table ID
 
         CommandException exception = assertThrows(CommandException.class, () -> command.execute(model));
-        assertEquals(String.format(MESSAGE_UNKNOWN_TABLE_ID, -2), exception.getMessage());
+        assertEquals(DeleteTableCommand.MESSAGE_INVALID_TABLE_ID, exception.getMessage());
     }
 
     @Test
@@ -55,7 +53,7 @@ public class DeleteTableCommandTest {
         DeleteTableCommand command = new DeleteTableCommand(10); // table not added
 
         CommandException exception = assertThrows(CommandException.class, () -> command.execute(model));
-        assertEquals(String.format(Messages.MESSAGE_UNKNOWN_TABLE_ID, 10), exception.getMessage());
+        assertEquals(String.format(DeleteTableCommand.MESSAGE_TABLE_NOT_FOUND, 10), exception.getMessage());
     }
 
     @Test

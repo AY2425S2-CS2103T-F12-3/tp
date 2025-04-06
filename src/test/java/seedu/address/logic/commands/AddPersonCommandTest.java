@@ -18,7 +18,6 @@ import org.junit.jupiter.api.Test;
 
 import javafx.collections.ObservableList;
 import seedu.address.commons.core.GuiSettings;
-import seedu.address.logic.Messages;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.AddressBook;
 import seedu.address.model.Model;
@@ -78,7 +77,7 @@ public class AddPersonCommandTest {
         AddPersonCommand addPersonCommand = new AddPersonCommand(validPerson);
 
         assertThrows(CommandException.class,
-            Messages.MESSAGE_NO_CURRENT_WEDDING, () -> addPersonCommand.execute(model));
+            AddPersonCommand.MESSAGE_NO_WEDDING, () -> addPersonCommand.execute(model));
     }
 
     @Test

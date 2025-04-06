@@ -13,7 +13,7 @@ import seedu.address.model.wedding.exceptions.WeddingNotFoundException;
 public class DeleteWeddingCommand extends Command {
     public static final String COMMAND_WORD = "deleteWedding";
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Deletes the current wedding.\n"
-        + "Parameters: n/NAME "
+        + "Parameters: n/NAME"
             + "Example: " + COMMAND_WORD + " " + PREFIX_NAME + " Jon's Wedding";
 
     public static final String MESSAGE_SUCCESS = "Wedding deleted: %1$s";

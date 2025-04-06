@@ -5,8 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.Messages;
-import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
 import seedu.address.model.wedding.Wedding;
@@ -36,15 +34,14 @@ public class SetWeddingCommandTest {
 
     @Test
     public void execute_setWedding_failure() {
-        try {
-            Wedding existingWedding = new Wedding("Existing Wedding");
-            model.addWedding(existingWedding);
-            model.setCurrentWedding(existingWedding);
-            // Then, attempt to set a **different** wedding, which should fail
-            SetWeddingCommand command = new SetWeddingCommand("New Wedding");
-            CommandResult result = command.execute(model);
-        } catch (CommandException ce) {
-            assertEquals(ce.getMessage(), String.format(Messages.MESSAGE_UNKNOWN_WEDDING_NAME, "New Wedding"));
-        }
+        // First, set an existing wedding
+        Wedding existingWedding = new Wedding("Existing Wedding");
+        model.addWedding(existingWedding);
+        model.setCurrentWedding(existingWedding);
+        // Then, attempt to set a **different** wedding, which should fail
+        SetWeddingCommand command = new SetWeddingCommand("New Wedding");
+        CommandResult result = command.execute(model);
+        assertEquals(String.format(SetWeddingCommand.MESSAGE_WEDDING_MISSING, "New Wedding"),
+                result.getFeedbackToUser());
     }
 }

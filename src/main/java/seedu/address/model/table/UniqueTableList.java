@@ -12,7 +12,6 @@ import javafx.collections.ObservableList;
 import seedu.address.model.UniqueList;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.exceptions.DuplicatePersonException;
-import seedu.address.model.table.exceptions.DuplicateTableException;
 import seedu.address.model.table.exceptions.TableNotFoundException;
 
 /**
@@ -81,7 +80,7 @@ public class UniqueTableList implements Iterable<Table>, UniqueList<Table> {
         requireNonNull(toAdd);
 
         if (hasTableById(toAdd.getTableId())) {
-            throw new DuplicateTableException();
+            throw new IllegalArgumentException("Table with ID " + toAdd.getTableId() + " already exists.");
         }
         internalList.add(toAdd);
     }

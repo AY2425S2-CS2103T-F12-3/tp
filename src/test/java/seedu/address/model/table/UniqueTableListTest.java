@@ -16,7 +16,6 @@ import org.junit.jupiter.api.Test;
 
 import seedu.address.model.person.Person;
 import seedu.address.model.person.exceptions.DuplicatePersonException;
-import seedu.address.model.table.exceptions.DuplicateTableException;
 import seedu.address.model.table.exceptions.TableNotFoundException;
 import seedu.address.testutil.PersonBuilder;
 
@@ -46,7 +45,7 @@ public class UniqueTableListTest {
     @Test
     public void addTable_duplicateTable_throwsException() {
         uniqueTableList.addTable(table1);
-        assertThrows(DuplicateTableException.class, () -> uniqueTableList.addTable(new Table(1, 5)));
+        assertThrows(IllegalArgumentException.class, () -> uniqueTableList.addTable(new Table(1, 5)));
     }
 
     @Test

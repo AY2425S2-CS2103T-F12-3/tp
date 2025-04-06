@@ -33,13 +33,29 @@ public class DeleteTableCommandParser implements Parser<DeleteTableCommand> {
             );
         }
 
-        int tableId = ParserUtil.parseTableId(tokens[0]);
-        return new DeleteTableCommand(tableId);
+        try {
+            int tableId = Integer.parseInt(tokens[0]);
+            if (tableId <= 0) {
+                throw new ParseException(DeleteTableCommand.MESSAGE_INVALID_TABLE_ID);
+            }
+            return new DeleteTableCommand(tableId);
+        } catch (NumberFormatException e) {
+            throw new ParseException("Table ID must be a valid positive integer.\n\n"
+                    + "Usage: " + DeleteTableCommand.MESSAGE_USAGE);
+        }
     }
 
     private DeleteTableCommand parseWithPrefix(ArgumentMultimap argMultimap) throws ParseException {
-        int tableId = ParserUtil.parseTableId(argMultimap.getValue(PREFIX_TABLE_ID).get());
-        return new DeleteTableCommand(tableId);
+        try {
+            int tableId = Integer.parseInt(argMultimap.getValue(PREFIX_TABLE_ID).get());
+            if (tableId <= 0) {
+                throw new ParseException(DeleteTableCommand.MESSAGE_INVALID_TABLE_ID);
+            }
+            return new DeleteTableCommand(tableId);
+        } catch (NumberFormatException e) {
+            throw new ParseException("Table ID must be a valid positive integer.\n\n"
+                    + "Usage: " + DeleteTableCommand.MESSAGE_USAGE);
+        }
     }
 }
 

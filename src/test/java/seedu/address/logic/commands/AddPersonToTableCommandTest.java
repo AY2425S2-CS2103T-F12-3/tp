@@ -133,6 +133,16 @@ public class AddPersonToTableCommandTest {
     }
 
     @Test
+    public void execute_tableIdMax_success() throws Exception {
+        model.addTable(new Table(Integer.MAX_VALUE, 3));
+        AddPersonToTableCommand command = new AddPersonToTableCommand(guestName, Integer.MAX_VALUE);
+
+        CommandResult result = command.execute(model);
+        assertEquals(String.format(AddPersonToTableCommand.MESSAGE_ADD_GUEST_TO_TABLE_SUCCESS,
+                guestName.fullName, Integer.MAX_VALUE), result.getFeedbackToUser());
+    }
+
+    @Test
     public void equals_sameValues_returnsTrue() {
         AddPersonToTableCommand cmd1 = new AddPersonToTableCommand(guestName, 1);
         AddPersonToTableCommand cmd2 = new AddPersonToTableCommand(guestName, 1);

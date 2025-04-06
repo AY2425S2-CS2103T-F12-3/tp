@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
-import seedu.address.model.exceptions.NoCurrentWeddingException;
 import seedu.address.model.wedding.Wedding;
 
 /**
@@ -36,7 +35,7 @@ public class DeleteWeddingCommandTest {
 
         // Ensure wedding is deleted
         assertEquals(0, model.getAddressBook().getWeddingList().size());
-        assertThrows(NoCurrentWeddingException.class, () -> model.getAddressBook().getCurrentWedding());
+        assertThrows(NullPointerException.class, () -> model.getAddressBook().getCurrentWedding().getName());
     }
 
     // @Test

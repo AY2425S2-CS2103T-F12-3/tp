@@ -1,8 +1,5 @@
 package seedu.address.logic.parser;
 
-import static seedu.address.logic.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
-import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
-
 import seedu.address.logic.commands.SetWeddingCommand;
 import seedu.address.logic.parser.exceptions.ParseException;
 /**
@@ -12,14 +9,10 @@ public class SetWeddingCommandParser implements Parser<SetWeddingCommand> {
 
     @Override
     public SetWeddingCommand parse(String args) throws ParseException {
-        ArgumentMultimap argMultimap =
-            ArgumentTokenizer.tokenize(args, PREFIX_NAME);
-
-        if (!argMultimap.getValue(PREFIX_NAME).isPresent()) {
-            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, SetWeddingCommand.MESSAGE_USAGE));
+        String trimmedArgs = args.trim();
+        if (trimmedArgs.isEmpty()) {
+            throw new ParseException("Wedding name cannot be empty.");
         }
-
-        String weddingName = argMultimap.getValue(PREFIX_NAME).get().trim();
-        return new SetWeddingCommand(weddingName);
+        return new SetWeddingCommand(trimmedArgs);
     }
 }

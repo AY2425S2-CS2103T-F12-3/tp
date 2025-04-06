@@ -1,9 +1,6 @@
 package seedu.address.logic.parser;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.address.logic.Messages.MESSAGE_INVALID_TABLE_CAPACITY;
-import static seedu.address.logic.Messages.MESSAGE_INVALID_TABLE_ID;
-import static seedu.address.logic.Messages.MESSAGE_INVALID_WEDDING_NAME;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -176,12 +173,12 @@ public class ParserUtil {
     public static int parseTableId(String tableId) throws ParseException {
         try {
             int id = Integer.parseInt(tableId.trim());
-            if (id < 1 || id > 100) {
-                throw new ParseException(MESSAGE_INVALID_TABLE_ID);
+            if (id <= 0) {
+                throw new ParseException("Table ID must be a positive integer.");
             }
             return id;
         } catch (NumberFormatException e) {
-            throw new ParseException(MESSAGE_INVALID_TABLE_ID);
+            throw new ParseException("Invalid table ID. Must be an integer.");
         }
     }
 
@@ -196,10 +193,6 @@ public class ParserUtil {
     public static String parseWeddingName(String weddingName) throws ParseException {
         String trimmedWeddingName = weddingName.trim();
 
-        if (trimmedWeddingName.isEmpty()) {
-            throw new ParseException(MESSAGE_INVALID_WEDDING_NAME);
-        }
-
         return trimmedWeddingName;
     }
 
@@ -213,12 +206,12 @@ public class ParserUtil {
     public static int parseCapacity(String capStr) throws ParseException {
         try {
             int cap = Integer.parseInt(capStr.trim());
-            if (cap < 1 || cap > 100) {
-                throw new ParseException(MESSAGE_INVALID_TABLE_CAPACITY);
+            if (cap <= 0) {
+                throw new ParseException("Capacity must be a positive integer.");
             }
             return cap;
         } catch (NumberFormatException e) {
-            throw new ParseException(MESSAGE_INVALID_TABLE_CAPACITY);
+            throw new ParseException("Invalid capacity. Must be an integer.");
         }
     }
 

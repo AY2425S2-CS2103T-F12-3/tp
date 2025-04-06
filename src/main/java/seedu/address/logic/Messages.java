@@ -18,16 +18,6 @@ public class Messages {
     public static final String MESSAGE_PERSONS_LISTED_OVERVIEW = "%1$d persons listed!";
     public static final String MESSAGE_DUPLICATE_FIELDS =
                 "Multiple values specified for the following single-valued field(s): ";
-    public static final String MESSAGE_UNKNOWN_PERSON_NAME = "The person with the name '%s' not found!";
-    public static final String MESSAGE_UNKNOWN_TABLE_ID = "The table with the id %d not found!";
-    public static final String MESSAGE_NO_CURRENT_WEDDING = "No current wedding set. Please use 'setWedding' first.";
-    public static final String MESSAGE_TABLE_FULL = "Table with ID %d is full!";
-    public static final String MESSAGE_INVALID_TABLE_ID = "Please input a number between 1 and 100, inclusive, "
-        + "for the table id!";
-    public static final String MESSAGE_INVALID_TABLE_CAPACITY = "Please input a number between 1 and 100, inclusive, "
-        + "for the table capacity!";
-    public static final String MESSAGE_UNKNOWN_WEDDING_NAME = "There is no wedding with the name: %s";
-    public static final String MESSAGE_INVALID_WEDDING_NAME = "Wedding name cannot be empty";
 
     /**
      * Returns an error message indicating the duplicate prefixes.
