@@ -132,6 +132,7 @@
         "adding-a-person-addperson": "Adding a person: addPerson",
         "deleting-a-person-deleteperson": "Deleting a Person : deletePerson",
         "filtering-persons-filterpersons": "Filtering Persons: filterPersons",
+        "listing-persons-list": "Listing Persons : list",
         "managing-tables": "Managing Tables",
         "adding-a-table-addtable": "Adding a Table : addTable",
         "deleting-a-table-deletetable": "Deleting a Table : deleteTable",
@@ -144,6 +145,9 @@
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
         "glossary": "Glossary",
+        "list-of-prefixes-and-its-meaning": "List of prefixes and its meaning:",
+        "allowed-dietaryrestriction-values": "Allowed DIETARYRESTRICTION values:",
+        "allowed-rsvp-values": "Allowed RSVP values:",
         "faq": "FAQ",
         "known-issues": "Known issues",
         "command-summary": "Command Summary"
