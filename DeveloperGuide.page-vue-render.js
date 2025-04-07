@@ -563,13 +563,13 @@ with(this){return _c('h3',{attrs:{"id":"uc10-remove-a-guest-from-a-table"}},[_v(
 with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("A wedding has been created.")]),_v(" "),_c('li',[_v("The wedding has been set as the active wedding in WeddingHero.")]),_v(" "),_c('li',[_v("A person has already been assigned to a table.")])])}
+with(this){return _c('ul',[_c('li',[_v("A wedding has been created.")]),_v(" "),_c('li',[_v("The wedding has been set as the active wedding in WeddingHero.")]),_v(" "),_c('li',[_v("A guest has already been assigned to a table.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User decides to remove a guest from a table.")]),_v(" "),_c('li',[_v("User enters the table and the guest to be removed")]),_v(" "),_c('li',[_v("WeddingHero checks if the specified person exists and is assigned to the specified table.")]),_v(" "),_c('li',[_v("WeddingHero removes the person from the table.")]),_v(" "),_c('li',[_v("WeddingHero displays a confirmation message that the guest has been successfully removed from the table."),_c('br'),_v("\nUse case ends.")])])}
+with(this){return _c('ol',[_c('li',[_v("User decides to remove a guest from a table.")]),_v(" "),_c('li',[_v("User enters the table and the guest to be removed")]),_v(" "),_c('li',[_v("WeddingHero checks if the specified guest exists and is assigned to the specified table.")]),_v(" "),_c('li',[_v("WeddingHero removes the guest from the table.")]),_v(" "),_c('li',[_v("WeddingHero displays a confirmation message that the guest has been successfully removed from the table."),_c('br'),_v("\nUse case ends.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
@@ -836,6 +836,6 @@ with(this){return _c('h2',{attrs:{"id":"appendix-planned-enhancements"}},[_c('st
 with(this){return _c('ol',[_c('li',[_c('strong',[_v("Make setWedding error message more specific:")]),_v(" We currently don't have a feature where users can't directly access all of the names of the weddings they've created so far. The current error message for not entering an existing wedding's name for the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setWedding")]),_v(" command shows "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("There is no wedding with the name: ")]),_v(" with the typed wedding name. We plan to make this error message also mention all the names of currently created weddings so that the users can see which weddings they've created so far.")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Tue, 8 Apr 2025, 1:57:00 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Tue, 8 Apr 2025, 2:05:53 GMT+8]")])])])}
 }];
   
