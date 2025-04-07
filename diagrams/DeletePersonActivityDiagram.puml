@@ -1,0 +1,30 @@
+@startuml
+start
+
+:User enters command
+"deletePerson INDEX";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  if (A wedding has been set as the 'current' wedding?) then (yes)
+    :Get filtered person list;
+    if (Index is valid?) then (yes)
+      :Get person at specified index;
+      :Remove person from wedding's guest list;
+      if (Person is seated at a table?) then (yes)
+        :Remove person from their assigned table;
+      endif (no)
+      :Show success message with deleted person details;
+    else
+      :Show error message about invalid index;
+    endif
+  else (no)
+    :Show error message that no current wedding is set;
+  endif
+else (no)
+  :Show error message about invalid format;
+endif
+
+stop
+@enduml

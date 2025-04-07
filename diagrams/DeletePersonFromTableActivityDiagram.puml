@@ -1,0 +1,36 @@
+@startuml
+start
+
+:User enters command
+"deletePersonFromTable n/NAME tid/TABLE_ID";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  if (A wedding has been set as the 'current' wedding?) then (yes)
+    :Attempt to find person with given name in the guest list;
+    if (Person found?) then (yes)
+      :Attempt to remove person from specified table;
+      if (Table with specified ID exists?) then (yes)
+        if (Person is actually seated at this table?) then (yes)
+          :Remove person from table;
+          :Update person's table assignment status;
+          :Show success message with person name and table ID;
+        else (no)
+          :Show error message that person is not assigned to this table;
+        endif
+      else (no)
+        :Show error message that table does not exist;
+      endif
+    else (no)
+      :Show error message that person was not found;
+    endif
+  else (no)
+    :Show error message that no current wedding is set;
+  endif
+else (no)
+  :Show error message about invalid command format;
+endif
+
+stop
+@enduml

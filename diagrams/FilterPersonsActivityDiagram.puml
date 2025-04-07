@@ -1,0 +1,28 @@
+@startuml
+start
+
+:User enters command
+"filterPersons [d/DIETARYRESTRICTION] [r/RSVP]";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  if (At least one filter type specified?) then (yes)
+    if (Multiple filters of same type used?) then (yes)
+      :Show error message about duplicate filter types;
+    else (no)
+      :Create filter object(s) for specified criteria;
+      :Combine multiple filters if both dietary and RSVP specified;
+      :Apply combined filter to person list;
+      :Count matching persons;
+      :Show results with count of matching persons;
+    endif
+  else (no)
+    :Show error message that at least one filter is required;
+  endif
+else (no)
+  :Show error message about invalid format;
+endif
+
+stop
+@enduml

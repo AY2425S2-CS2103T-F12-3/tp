@@ -1,0 +1,27 @@
+@startuml
+start
+
+:User enters command
+"addPerson n/NAME p/PHONE e/EMAIL a/ADDRESS d/DIETARY_RESTRICTION r/RSVP [t/TAG]...";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  :Create Person object with provided details;
+  if (A wedding has been set as the 'current' wedding?) then (yes)
+    if (Person with same name already exists?) then (yes)
+      :Show error message that person already exists;
+    else (no)
+      :Add person to the current wedding's guest list;
+      :Save the updated wedding state;
+      :Show success message with person details;
+    endif
+  else (no)
+    :Show error message that no current wedding is set;
+  endif
+else (no)
+  :Show error message about invalid format;
+endif
+
+stop
+@enduml
