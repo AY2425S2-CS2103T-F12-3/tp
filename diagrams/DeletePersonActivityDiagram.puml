@@ -14,7 +14,7 @@ if (Command format valid?) then (yes)
       :Remove person from wedding's guest list;
       if (Person is seated at a table?) then (yes)
         :Remove person from their assigned table;
-      endif (no)
+      endif
       :Show success message with deleted person details;
     else
       :Show error message about invalid index;
