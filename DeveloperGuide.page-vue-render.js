@@ -836,6 +836,6 @@ with(this){return _c('h2',{attrs:{"id":"appendix-planned-enhancements"}},[_c('st
 with(this){return _c('ol',[_c('li',[_c('strong',[_v("Make setWedding error message more specific:")]),_v(" We currently don't have a feature where users can't directly access all of the names of the weddings they've created so far. The current error message for not entering an existing wedding's name for the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setWedding")]),_v(" command shows "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("There is no wedding with the name: ")]),_v(" with the typed wedding name. We plan to make this error message also mention all the names of currently created weddings so that the users can see which weddings they've created so far.")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Tue, 8 Apr 2025, 2:05:53 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Tue, 8 Apr 2025, 2:25:33 GMT+8]")])])])}
 }];
   
