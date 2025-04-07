@@ -54,6 +54,9 @@ traditional mouse-based applications.
 - [Saving the data](#saving-the-data)
 - [Editing the data file](#editing-the-data-file)
 - [Glossary](#glossary)
+  - [List of prefixes](#list-of-prefixes-and-its-meaning)
+  - [Allowed dietary restrictions](#allowed-dietary-restrictions)
+  - [Allowed RSVP values](#allowed-rsvp-values) 
 - [FAQ](#faq)
 - [Known issues](#known-issues)
 - [Command Summary](#command-summary)
@@ -243,6 +246,10 @@ of guests invited.
   - Total number of guests invited (regardless of RSVP status)
   - List of all invited guests
 
+<img src="images/UG-example-images/weddingOverviewExample.png" alt="Getting an overview of the wedding" style="max-width: 70%; height: auto;" />
+
+<sub>Example output when getting a wedding overview with the command: `weddingOverview`</sub>  
+  
 <box type="info" seamless>
 
 Future Extension: A future update will add the ability to see the number of guests who have accepted their RSVP, 
@@ -293,6 +300,10 @@ Details:
 - A wedding should be created and set before a person can be added.
 - Please refer to the full list of [Allowed Dietary Restrictions](#allowed-dietary-restrictions) and [Allowed RSVP 
   Values](#allowed-rsvp-values).
+
+<img src="images/UG-example-images/addPersonExample.png" alt="Adding a new person named Jensen Huang" style="max-width: 70%; height: auto;" />
+
+<sub>Example output when adding a new person named Jensen Huang with the command: `addPerson n/Jensen Huang p/84197426 e/jensenhuang@nvidia.com a/313 Nvidia Ave. d/None r/YES`</sub>
 
 **Examples:**
 ```
@@ -483,6 +494,10 @@ Assigns a guest to a specified table within the currently active wedding.
 - The parameter `TABLEID` should exactly match the table's identifier number.
 - Useful for quickly locating a specific table in the wedding layout.
 
+<img src="images/UG-example-images/addPersonToTableExample.png" alt="Adding a person named Jensen Huang to table 1" style="max-width: 70%; height: auto;" />
+
+<sub>Example output when adding a person named Jensen Huang to table 1 with the command: `addPersonToTable n/Jensen Huang tid/1`</sub>
+
 **Examples:**
 - Running `addPersonToTable n/John Doe tid/1`  adds a guest called John Doe to the table with the id 1.
 
@@ -499,17 +514,22 @@ example:
 - deletePersonFromTable n/John Doe tid/5 deletes the John Doe guest from the table with ID 5
 
 ---
-### Exiting the program : `exit`
+
+## Exiting the program : `exit`
 
 Exits the program.
 
 Format: `exit`
 
-### Saving the data
+---
+
+## Saving the data
 
 WeddingHero data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
 
-### Editing the data file
+---
+
+## Editing the data file
 
 WeddingHero data are saved automatically as a JSON file `[JAR file location]/data/WeddingHero.json`.
 Advanced users are welcome to update data directly by editing that data file.
@@ -534,7 +554,7 @@ empty data file at the next run.  Hence, it is recommended to take a backup of t
 the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 </box>
 
-### Glossary
+## Glossary
 - **Guest**: Refers to an individual invited to attend the wedding. This term is used when discussing the context of the wedding event and the guest's participation in it.
 
 - **Person**: Refers to an individual in the system, typically used when discussing the management of their details such as contact information, dietary restrictions, and RSVP status. This term is more general and can be used outside the context of a specific wedding event.

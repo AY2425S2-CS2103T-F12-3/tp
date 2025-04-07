@@ -37,7 +37,8 @@ public class WeddingOverviewCommand extends Command {
         if (wedding == null) {
             throw new CommandException(MESSAGE_NO_WEDDING);
         }
-
+        model.updateFilteredPersonList(Model.PREDICATE_SHOW_ALL_PERSONS);
+        model.updateFilteredTableList(Model.PREDICATE_SHOW_ALL_TABLES);
         // ✅ Ensure TableList and RsvpList are properly initialized
         UniqueTableList tableList = model.getCurrentWedding().getTableList();
 

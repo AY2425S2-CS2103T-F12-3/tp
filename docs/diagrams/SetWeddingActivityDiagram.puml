@@ -1,0 +1,24 @@
+@startuml
+start
+
+:User enters command
+"setWedding n/John and Jane's Wedding";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  :Extract wedding name;
+  if (Wedding with the same name exists?) then (yes)
+    :Retrieve the wedding with the given name from the system;
+    :Set the retrieved wedding as the 'current' wedding;
+    :Retrieve data about the persons invited and tables used for that wedding;
+    :Update the GUI with the retrieved data;
+  else (no)
+    :Show that no such wedding with the given name exists;
+  endif
+else (no)
+  :Show that the format is wrong;
+endif
+
+stop
+@enduml

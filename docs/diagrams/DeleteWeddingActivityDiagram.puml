@@ -1,0 +1,26 @@
+@startuml
+start
+
+:User enters command
+"deleteWedding n/John and Jane's Wedding";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  :Extract wedding name;
+  if (Wedding with the same name exists?) then (yes)
+    :Delete the wedding with the same name from the system;
+    if (Wedding with the given name was also the 'current' wedding?) then (yes)
+      :Clear the information displayed on the GUI;
+    else (no)
+      :Do not clear the information displayed on the GUI;
+    endif
+  else (no)
+    :Show that no such wedding with the given name exists;
+  endif
+else (no)
+  :Show that the format is wrong;
+endif
+
+stop
+@enduml
