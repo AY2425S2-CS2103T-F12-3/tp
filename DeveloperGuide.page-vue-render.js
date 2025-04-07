@@ -1,7 +1,7 @@
 
     var pageVueRenderFn = function anonymous(
 ) {
-with(this){return _c('div',{attrs:{"id":"app"}},[_c('header',{attrs:{"sticky":""}},[_c('navbar',{attrs:{"type":"dark"},scopedSlots:_u([{key:"brand",fn:function(){return [_c('a',{staticClass:"navbar-brand",attrs:{"href":"/tp/index.html","title":"Home"}},[_v("Wedding Hero")])]},proxy:true},{key:"right",fn:function(){return [_c('li',[_c('form',{staticClass:"navbar-form"},[_c('searchbar',{attrs:{"data":searchData,"placeholder":"Search","on-hit":searchCallback,"menu-align-right":""}})],1)])]},proxy:true}])},[_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"/tp/index.html"}},[_v("Home")])]),_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"/tp/UserGuide.html"}},[_v("User Guide")])]),_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"/tp/DeveloperGuide.html"}},[_v("Developer Guide")])]),_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"/tp/AboutUs.html"}},[_v("About Us")])]),_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"https://github.com/AY2425S2-CS2103T-F12-3/tp","target":"_blank"}},[_c('span',[_c('span',{staticClass:"fab fa-github",attrs:{"aria-hidden":"true"}})])])])])],1),_v(" "),_c('div',{attrs:{"id":"flex-body"}},[_c('overlay-source',{attrs:{"id":"site-nav","tag-name":"nav","to":"site-nav"}},[_c('div',{staticClass:"site-nav-top"},[_c('div',{staticClass:"fw-bold mb-2",staticStyle:{"font-size":"1.25rem"}},[_v("Site Map")])]),_v(" "),_c('div',{staticClass:"nav-component slim-scroll"},[_c('site-nav',[_c('overlay-source',{staticClass:"site-nav-list site-nav-list-root",attrs:{"tag-name":"ul","to":"mb-site-nav"}},[_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/index.html"}},[_v("Home")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html"}},[_v("User Guide")]),_v(" "),_c('div',{staticClass:"site-nav-dropdown-btn-container"},[_c('i',{staticClass:"site-nav-dropdown-btn-icon site-nav-rotate-icon",attrs:{"onclick":"handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"}},[_c('span',{staticClass:"glyphicon glyphicon-menu-down",attrs:{"aria-hidden":"true"}})])])]),_c('ul',{staticClass:"site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list"},[_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html#quick-start"}},[_v("Quick Start")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html#features"}},[_v("Features")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html#faq"}},[_v("FAQ")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html#faq"}},[_v("Command Summary")])])])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html"}},[_v("Developer Guide")]),_v(" "),_c('div',{staticClass:"site-nav-dropdown-btn-container"},[_c('i',{staticClass:"site-nav-dropdown-btn-icon site-nav-rotate-icon",attrs:{"onclick":"handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"}},[_c('span',{staticClass:"glyphicon glyphicon-menu-down",attrs:{"aria-hidden":"true"}})])])]),_c('ul',{staticClass:"site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list"},[_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#acknowledgements"}},[_v("Acknowledgements")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#setting-up-getting-started"}},[_v("Setting Up")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#design"}},[_v("Design")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#implementation"}},[_v("Implementation")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#documentation-logging-testing-configuration-dev-ops"}},[_v("Documentation, logging, testing, configuration, dev-ops")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#appendix-requirements"}},[_v("Appendix: Requirements")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#appendix-instructions-for-manual-testing"}},[_v("Appendix: Instructions for manual testing")])])])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_v("Tutorials\n\n"),_c('div',{staticClass:"site-nav-dropdown-btn-container"},[_c('i',{staticClass:"site-nav-dropdown-btn-icon",attrs:{"onclick":"handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"}},[_c('span',{staticClass:"glyphicon glyphicon-menu-down",attrs:{"aria-hidden":"true"}})])])]),_c('ul',{staticClass:"site-nav-dropdown-container site-nav-list"},[_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"https://se-education.org/guides/tutorials/ab3TracingCode.html"}},[_v("Tracing code")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"https://se-education.org/guides/tutorials/ab3AddRemark.html"}},[_v("Adding a command")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"https://se-education.org/guides/tutorials/ab3RemovingFields.html"}},[_v("Removing Fields")])])])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/AboutUs.html"}},[_v("About Us")])])])])],1)],1)]),_v(" "),_c('div',{attrs:{"id":"content-wrapper"}},[_m(0),_v(" "),_c('div',{pre:true,attrs:{"class":"page-nav-print d-none d-print-block"}}),_v(" "),_c('hr'),_v(" "),_m(1),_v(" "),_m(2),_v(" "),_c('hr'),_v(" "),_m(3),_v(" "),_m(4),_v(" "),_c('hr'),_v(" "),_m(5),_v(" "),_m(6),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ArchitectureDiagram.png","width":"280"}}),_v(" "),_m(7),_v(" "),_c('p',[_v("Given below is a quick overview of main components and how they interact with each other.")]),_v(" "),_m(8),_v(" "),_m(9),_v(" "),_m(10),_v(" "),_c('p',[_v("The bulk of the app's work is done by the following four components:")]),_v(" "),_m(11),_v(" "),_m(12),_v(" "),_m(13),_v(" "),_m(14),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ArchitectureSequenceDiagram.png","width":"574"}}),_v(" "),_c('p',[_v("Each of the four main components (also shown in the diagram above),")]),_v(" "),_m(15),_v(" "),_m(16),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ComponentManagers.png","width":"300"}}),_v(" "),_c('p',[_v("The sections below give more details of each component.")]),_v(" "),_m(17),_v(" "),_m(18),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UiClassDiagram.png","alt":"Structure of the UI Component"}}),_v(" "),_m(19),_v(" "),_m(20),_v(" "),_m(21),_v(" "),_m(22),_v(" "),_m(23),_v(" "),_m(24),_v(" "),_m(25),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/LogicClassDiagram.png","width":"550"}}),_v(" "),_m(26),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/DeleteSequenceDiagram.png","alt":"Interactions Inside the Logic Component for the `delete 1` Command"}}),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** The lifeline for `DeleteCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline continues till the end of diagram.\n")]),_v(" "),_m(27),_v(" "),_m(28),_v(" "),_m(29),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ParserClasses.png","width":"600"}}),_v(" "),_c('p',[_v("How the parsing works:")]),_v(" "),_m(30),_v(" "),_m(31),_v(" "),_m(32),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ModelClassDiagram.png","width":"450"}}),_v(" "),_m(33),_v(" "),_m(34),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** An alternative (arguably, a more OOP) model is given below. It has a `Tag` list in the `AddressBook`, which `Person` references. This allows `AddressBook` to only require one `Tag` object per unique tag, instead of each `Person` needing their own `Tag` objects."),_c('br')]),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/BetterModelClassDiagram.png","width":"450"}}),_v(" "),_m(35),_v(" "),_m(36),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/StorageClassDiagram.png","width":"550"}}),_v(" "),_m(37),_v(" "),_m(38),_v(" "),_m(39),_v(" "),_m(40),_v(" "),_c('hr'),_v(" "),_m(41),_v(" "),_c('p',[_v("This section describes some noteworthy details on how certain features are implemented.")]),_v(" "),_m(42),_v(" "),_m(43),_v(" "),_m(44),_v(" "),_m(45),_v(" "),_m(46),_v(" "),_c('p',[_v("Given below is an example usage scenario and how the undo/redo mechanism behaves at each step.")]),_v(" "),_m(47),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState0.png","alt":"UndoRedoState0"}}),_v(" "),_m(48),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState1.png","alt":"UndoRedoState1"}}),_v(" "),_m(49),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState2.png","alt":"UndoRedoState2"}}),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** If a command fails its execution, it will not call `Model#commitAddressBook()`, so the address book state will not be saved into the `addressBookStateList`.\n")]),_v(" "),_m(50),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState3.png","alt":"UndoRedoState3"}}),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** If the `currentStatePointer` is at index 0, pointing to the initial AddressBook state, then there are no previous AddressBook states to restore. The `undo` command uses `Model#canUndoAddressBook()` to check if this is the case. If so, it will return an error to the user rather than attempting to perform the undo.\n")]),_v(" "),_m(51),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoSequenceDiagram-Logic.png","alt":"UndoSequenceDiagram-Logic"}}),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** The lifeline for `UndoCommand` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram.\n")]),_v(" "),_m(52),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoSequenceDiagram-Model.png","alt":"UndoSequenceDiagram-Model"}}),_v(" "),_m(53),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** If the `currentStatePointer` is at index `addressBookStateList.size() - 1`, pointing to the latest address book state, then there are no undone AddressBook states to restore. The `redo` command uses `Model#canRedoAddressBook()` to check if this is the case. If so, it will return an error to the user rather than attempting to perform the redo.\n")]),_v(" "),_m(54),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState4.png","alt":"UndoRedoState4"}}),_v(" "),_m(55),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState5.png","alt":"UndoRedoState5"}}),_v(" "),_c('p',[_v("The following activity diagram summarizes what happens when a user executes a new command:")]),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/CommitActivityDiagram.png","width":"250"}}),_v(" "),_m(56),_v(" "),_m(57),_v(" "),_m(58),_v(" "),_m(59),_v(" "),_m(60),_v(" "),_m(61),_v(" "),_c('hr'),_v(" "),_m(62),_v(" "),_m(63),_v(" "),_c('hr'),_v(" "),_m(64),_v(" "),_m(65),_v(" "),_m(66),_v(" "),_c('p',[_v("Olivia is a professional wedding planner with 5 years of experience organising client weddings. She has to manage a significant number of wedding guests as well as the seating arrangement for the wedding. Olivia needs an efficient way to manage information without distractions.")]),_v(" "),_m(67),_v(" "),_m(68),_v(" "),_m(69),_v(" "),_m(70),_v(" "),_m(71),_m(72),_v(" "),_m(73),_v(" "),_m(74),_v(" "),_m(75),_v(" "),_m(76),_v(" "),_m(77),_v(" "),_m(78),_v(" "),_m(79),_v(" "),_c('hr'),_v(" "),_m(80),_v(" "),_m(81),_v(" "),_m(82),_v(" "),_m(83),_v(" "),_m(84),_v(" "),_m(85),_v(" "),_m(86),_v(" "),_m(87),_v(" "),_m(88),_v(" "),_m(89),_v(" "),_m(90),_v(" "),_m(91),_v(" "),_c('hr'),_v(" "),_m(92),_v(" "),_m(93),_v(" "),_m(94),_v(" "),_m(95),_v(" "),_m(96),_v(" "),_m(97),_v(" "),_m(98),_v(" "),_c('hr'),_v(" "),_m(99),_v(" "),_m(100),_v(" "),_m(101),_v(" "),_m(102),_v(" "),_m(103),_v(" "),_m(104),_v(" "),_m(105),_v(" "),_m(106),_v(" "),_m(107),_v(" "),_c('hr'),_v(" "),_m(108),_v(" "),_m(109),_v(" "),_m(110),_v(" "),_m(111),_v(" "),_m(112),_v(" "),_m(113),_v(" "),_m(114),_v(" "),_c('hr'),_v(" "),_m(115),_v(" "),_m(116),_v(" "),_m(117),_v(" "),_m(118),_v(" "),_m(119),_v(" "),_m(120),_v(" "),_m(121),_v(" "),_m(122),_v(" "),_m(123),_v(" "),_c('hr'),_v(" "),_m(124),_v(" "),_m(125),_v(" "),_m(126),_v(" "),_m(127),_v(" "),_m(128),_v(" "),_m(129),_v(" "),_m(130),_v(" "),_m(131),_v(" "),_m(132),_v(" "),_c('hr'),_v(" "),_m(133),_v(" "),_m(134),_v(" "),_m(135),_v(" "),_m(136),_v(" "),_m(137),_v(" "),_m(138),_v(" "),_m(139),_v(" "),_m(140),_v(" "),_m(141),_v(" "),_m(142),_v(" "),_m(143),_v(" "),_m(144),_v(" "),_c('hr'),_v(" "),_m(145),_v(" "),_c('p',[_v("Given below are instructions to test the app manually.")]),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** These instructions only provide a starting point for testers to work on; testers are expected to do more *exploratory* testing.\n")]),_v(" "),_m(146),_v(" "),_m(147),_v(" "),_m(148),_v(" "),_m(149)],1),_v(" "),_c('overlay-source',{attrs:{"id":"page-nav","tag-name":"nav","to":"page-nav"}},[_c('div',{staticClass:"nav-component slim-scroll"},[_c('overlay-source',{staticClass:"nav nav-pills flex-column my-0 small no-flex-wrap",attrs:{"id":"mb-page-nav","tag-name":"nav","to":"mb-page-nav"}},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#weddinghero-developer-guide"}},[_v("WeddingHero Developer Guide‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#acknowledgements"}},[_v("Acknowledgements‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#setting-up-getting-started"}},[_v("Setting up, getting started‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#design"}},[_v("Design‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#architecture"}},[_v("Architecture‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#ui-component"}},[_v("UI component‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#logic-component"}},[_v("Logic component‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#model-component"}},[_v("Model component‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#storage-component"}},[_v("Storage component‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#common-classes"}},[_v("Common classes‎")])]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#implementation"}},[_v("Implementation‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#proposed-undo-redo-feature"}},[_v("[Proposed] Undo/redo feature‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#proposed-data-archiving"}},[_v("[Proposed] Data archiving‎")])]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#documentation-logging-testing-configuration-dev-ops"}},[_v("Documentation, logging, testing, configuration, dev-ops‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#appendix-requirements"}},[_v("Appendix: Requirements‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#product-scope"}},[_v("Product scope‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#user-stories"}},[_v("User stories‎")])]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-cases"}},[_v("Use cases‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-case-create-a-wedding"}},[_v("Use case: Create a wedding‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-case-set-a-wedding"}},[_v("Use case: Set a wedding‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-case-wedding-overview"}},[_v("Use case: Wedding Overview‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-case-add-a-guest"}},[_v("Use case: Add a guest‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-case-delete-a-guest"}},[_v("Use case: Delete a guest‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-case-edit-a-guest"}},[_v("Use case: Edit a guest‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-case-add-a-table"}},[_v("Use case: Add a table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-case-delete-a-table"}},[_v("Use case: Delete a table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#non-functional-requirements"}},[_v("Non-Functional Requirements‎")])])]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#glossary"}},[_v("Glossary‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#appendix-instructions-for-manual-testing"}},[_v("Appendix: Instructions for manual testing‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#launch-and-shutdown"}},[_v("Launch and shutdown‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#saving-data"}},[_v("Saving data‎")])])])])],1)]),_v(" "),_c('scroll-top-button')],1),_v(" "),_m(150)])}
+with(this){return _c('div',{attrs:{"id":"app"}},[_c('header',{attrs:{"sticky":""}},[_c('navbar',{attrs:{"type":"dark"},scopedSlots:_u([{key:"brand",fn:function(){return [_c('a',{staticClass:"navbar-brand",attrs:{"href":"/tp/index.html","title":"Home"}},[_v("Wedding Hero")])]},proxy:true},{key:"right",fn:function(){return [_c('li',[_c('form',{staticClass:"navbar-form"},[_c('searchbar',{attrs:{"data":searchData,"placeholder":"Search","on-hit":searchCallback,"menu-align-right":""}})],1)])]},proxy:true}])},[_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"/tp/index.html"}},[_v("Home")])]),_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"/tp/UserGuide.html"}},[_v("User Guide")])]),_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"/tp/DeveloperGuide.html"}},[_v("Developer Guide")])]),_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"/tp/AboutUs.html"}},[_v("About Us")])]),_v(" "),_c('li',[_c('a',{staticClass:"nav-link",attrs:{"href":"https://github.com/AY2425S2-CS2103T-F12-3/tp","target":"_blank"}},[_c('span',[_c('span',{staticClass:"fab fa-github",attrs:{"aria-hidden":"true"}})])])])])],1),_v(" "),_c('div',{attrs:{"id":"flex-body"}},[_c('overlay-source',{attrs:{"id":"site-nav","tag-name":"nav","to":"site-nav"}},[_c('div',{staticClass:"site-nav-top"},[_c('div',{staticClass:"fw-bold mb-2",staticStyle:{"font-size":"1.25rem"}},[_v("Site Map")])]),_v(" "),_c('div',{staticClass:"nav-component slim-scroll"},[_c('site-nav',[_c('overlay-source',{staticClass:"site-nav-list site-nav-list-root",attrs:{"tag-name":"ul","to":"mb-site-nav"}},[_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/index.html"}},[_v("Home")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html"}},[_v("User Guide")]),_v(" "),_c('div',{staticClass:"site-nav-dropdown-btn-container"},[_c('i',{staticClass:"site-nav-dropdown-btn-icon site-nav-rotate-icon",attrs:{"onclick":"handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"}},[_c('span',{staticClass:"glyphicon glyphicon-menu-down",attrs:{"aria-hidden":"true"}})])])]),_c('ul',{staticClass:"site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list"},[_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html#quick-start"}},[_v("Quick Start")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html#features"}},[_v("Features")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html#faq"}},[_v("FAQ")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/UserGuide.html#faq"}},[_v("Command Summary")])])])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html"}},[_v("Developer Guide")]),_v(" "),_c('div',{staticClass:"site-nav-dropdown-btn-container"},[_c('i',{staticClass:"site-nav-dropdown-btn-icon site-nav-rotate-icon",attrs:{"onclick":"handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"}},[_c('span',{staticClass:"glyphicon glyphicon-menu-down",attrs:{"aria-hidden":"true"}})])])]),_c('ul',{staticClass:"site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list"},[_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#acknowledgements"}},[_v("Acknowledgements")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#setting-up-getting-started"}},[_v("Setting Up")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#design"}},[_v("Design")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#implementation"}},[_v("Implementation")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#documentation-logging-testing-configuration-dev-ops"}},[_v("Documentation, logging, testing, configuration, dev-ops")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#appendix-requirements"}},[_v("Appendix: Requirements")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#appendix-instructions-for-manual-testing"}},[_v("Appendix: Instructions for manual testing")])])])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_v("Tutorials\n\n"),_c('div',{staticClass:"site-nav-dropdown-btn-container"},[_c('i',{staticClass:"site-nav-dropdown-btn-icon",attrs:{"onclick":"handleSiteNavClick(this.parentNode.parentNode, false); event.stopPropagation();"}},[_c('span',{staticClass:"glyphicon glyphicon-menu-down",attrs:{"aria-hidden":"true"}})])])]),_c('ul',{staticClass:"site-nav-dropdown-container site-nav-list"},[_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"https://se-education.org/guides/tutorials/ab3TracingCode.html"}},[_v("Tracing code")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"https://se-education.org/guides/tutorials/ab3AddRemark.html"}},[_v("Adding a command")])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-1",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"https://se-education.org/guides/tutorials/ab3RemovingFields.html"}},[_v("Removing Fields")])])])])]),_v(" "),_c('li',[_c('div',{staticClass:"site-nav-default-list-item site-nav-list-item-0",attrs:{"onclick":"handleSiteNavClick(this)"}},[_c('a',{attrs:{"href":"/tp/AboutUs.html"}},[_v("About Us")])])])])],1)],1)]),_v(" "),_c('div',{attrs:{"id":"content-wrapper"}},[_m(0),_v(" "),_c('div',{pre:true,attrs:{"class":"page-nav-print d-none d-print-block"}}),_v(" "),_c('hr'),_v(" "),_m(1),_v(" "),_m(2),_v(" "),_m(3),_v(" "),_c('hr'),_v(" "),_m(4),_v(" "),_m(5),_v(" "),_c('hr'),_v(" "),_m(6),_v(" "),_m(7),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ArchitectureDiagram.png","width":"280"}}),_v(" "),_m(8),_v(" "),_c('p',[_v("Given below is a quick overview of main components and how they interact with each other.")]),_v(" "),_m(9),_v(" "),_m(10),_v(" "),_m(11),_v(" "),_c('p',[_v("The bulk of the app's work is done by the following four components:")]),_v(" "),_m(12),_v(" "),_m(13),_v(" "),_m(14),_v(" "),_m(15),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ArchitectureSequenceDiagram.png","width":"574"}}),_v(" "),_c('p',[_v("Each of the four main components (also shown in the diagram above),")]),_v(" "),_m(16),_v(" "),_m(17),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ComponentManagers.png","width":"300"}}),_v(" "),_c('p',[_v("The sections below give more details of each component.")]),_v(" "),_m(18),_v(" "),_m(19),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UiClassDiagram.png","alt":"Structure of the UI Component"}}),_v(" "),_m(20),_v(" "),_m(21),_v(" "),_m(22),_v(" "),_m(23),_v(" "),_m(24),_v(" "),_m(25),_v(" "),_m(26),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/LogicClassDiagram.png","width":"550"}}),_v(" "),_m(27),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/DeleteSequenceDiagram.png","alt":"Interactions Inside the Logic Component for the `delete 1` Command"}}),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** The lifeline for `DeleteCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline continues till the end of diagram.\n")]),_v(" "),_m(28),_v(" "),_m(29),_v(" "),_m(30),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ParserClasses.png","width":"600"}}),_v(" "),_c('p',[_v("How the parsing works:")]),_v(" "),_m(31),_v(" "),_m(32),_v(" "),_m(33),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/ModelClassDiagram.png","width":"450"}}),_v(" "),_m(34),_v(" "),_m(35),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** An alternative (arguably, a more OOP) model is given below. It has a `Tag` list in the `AddressBook`, which `Person` references. This allows `AddressBook` to only require one `Tag` object per unique tag, instead of each `Person` needing their own `Tag` objects."),_c('br')]),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/BetterModelClassDiagram.png","width":"450"}}),_v(" "),_m(36),_v(" "),_m(37),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/StorageClassDiagram.png","width":"550"}}),_v(" "),_m(38),_v(" "),_m(39),_v(" "),_m(40),_v(" "),_m(41),_v(" "),_c('hr'),_v(" "),_m(42),_v(" "),_c('p',[_v("This section describes some noteworthy details on how certain features are implemented.")]),_v(" "),_m(43),_v(" "),_m(44),_v(" "),_c('p',[_v("The implementation involves several validation steps:")]),_v(" "),_m(45),_v(" "),_c('p',[_v("Once all conditions are met, the guest is assigned to the table and the system state is saved.")]),_v(" "),_c('p',[_v("The activity diagram below illustrates the control flow of this command")]),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/AddPersonToTableActivityDiagram.png","width":"600","alt":"Activity diagram for addPersonToTable command"}}),_v(" "),_m(46),_v(" "),_m(47),_v(" "),_m(48),_v(" "),_m(49),_v(" "),_m(50),_v(" "),_c('p',[_v("Given below is an example usage scenario and how the undo/redo mechanism behaves at each step.")]),_v(" "),_m(51),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState0.png","alt":"UndoRedoState0"}}),_v(" "),_m(52),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState1.png","alt":"UndoRedoState1"}}),_v(" "),_m(53),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState2.png","alt":"UndoRedoState2"}}),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** If a command fails its execution, it will not call `Model#commitAddressBook()`, so the address book state will not be saved into the `addressBookStateList`.\n")]),_v(" "),_m(54),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState3.png","alt":"UndoRedoState3"}}),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** If the `currentStatePointer` is at index 0, pointing to the initial AddressBook state, then there are no previous AddressBook states to restore. The `undo` command uses `Model#canUndoAddressBook()` to check if this is the case. If so, it will return an error to the user rather than attempting to perform the undo.\n")]),_v(" "),_m(55),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoSequenceDiagram-Logic.png","alt":"UndoSequenceDiagram-Logic"}}),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** The lifeline for `UndoCommand` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram.\n")]),_v(" "),_m(56),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoSequenceDiagram-Model.png","alt":"UndoSequenceDiagram-Model"}}),_v(" "),_m(57),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** If the `currentStatePointer` is at index `addressBookStateList.size() - 1`, pointing to the latest address book state, then there are no undone AddressBook states to restore. The `redo` command uses `Model#canRedoAddressBook()` to check if this is the case. If so, it will return an error to the user rather than attempting to perform the redo.\n")]),_v(" "),_m(58),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState4.png","alt":"UndoRedoState4"}}),_v(" "),_m(59),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/UndoRedoState5.png","alt":"UndoRedoState5"}}),_v(" "),_c('p',[_v("The following activity diagram summarizes what happens when a user executes a new command:")]),_v(" "),_c('pic',{attrs:{"src":"/tp/diagrams/CommitActivityDiagram.png","width":"250"}}),_v(" "),_m(60),_v(" "),_m(61),_v(" "),_m(62),_v(" "),_m(63),_v(" "),_m(64),_v(" "),_m(65),_v(" "),_c('hr'),_v(" "),_m(66),_v(" "),_m(67),_v(" "),_c('hr'),_v(" "),_m(68),_v(" "),_m(69),_v(" "),_m(70),_v(" "),_c('p',[_v("Olivia is a professional wedding planner with 5 years of experience organising client weddings. She has to manage a significant number of wedding guests as well as the seating arrangement for the wedding. Olivia needs an efficient way to manage information without distractions.")]),_v(" "),_m(71),_v(" "),_m(72),_v(" "),_m(73),_v(" "),_m(74),_v(" "),_m(75),_m(76),_v(" "),_m(77),_v(" "),_m(78),_v(" "),_m(79),_v(" "),_m(80),_v(" "),_m(81),_v(" "),_m(82),_v(" "),_m(83),_v(" "),_c('hr'),_v(" "),_m(84),_v(" "),_m(85),_v(" "),_m(86),_v(" "),_m(87),_v(" "),_m(88),_v(" "),_m(89),_v(" "),_m(90),_v(" "),_m(91),_v(" "),_m(92),_v(" "),_m(93),_v(" "),_m(94),_v(" "),_m(95),_v(" "),_m(96),_v(" "),_m(97),_v(" "),_c('hr'),_v(" "),_m(98),_v(" "),_m(99),_v(" "),_m(100),_v(" "),_m(101),_v(" "),_m(102),_v(" "),_m(103),_v(" "),_m(104),_v(" "),_m(105),_v(" "),_c('hr'),_v(" "),_m(106),_v(" "),_m(107),_v(" "),_m(108),_v(" "),_m(109),_v(" "),_m(110),_v(" "),_m(111),_v(" "),_m(112),_v(" "),_m(113),_v(" "),_m(114),_v(" "),_m(115),_v(" "),_m(116),_v(" "),_m(117),_v(" "),_c('hr'),_v(" "),_m(118),_v(" "),_m(119),_v(" "),_m(120),_v(" "),_m(121),_v(" "),_m(122),_v(" "),_m(123),_v(" "),_m(124),_v(" "),_c('hr'),_v(" "),_m(125),_v(" "),_m(126),_v(" "),_m(127),_v(" "),_m(128),_v(" "),_m(129),_v(" "),_m(130),_v(" "),_m(131),_v(" "),_m(132),_v(" "),_m(133),_v(" "),_m(134),_v(" "),_m(135),_v(" "),_m(136),_v(" "),_c('hr'),_v(" "),_m(137),_v(" "),_m(138),_v(" "),_m(139),_v(" "),_m(140),_v(" "),_m(141),_v(" "),_c('p',[_v("Use case ends.")]),_v(" "),_m(142),_v(" "),_m(143),_v(" "),_m(144),_v(" "),_m(145),_v(" "),_m(146),_v(" "),_m(147),_v(" "),_m(148),_v(" "),_c('hr'),_v(" "),_m(149),_v(" "),_m(150),_v(" "),_m(151),_v(" "),_m(152),_v(" "),_m(153),_v(" "),_m(154),_v(" "),_m(155),_v(" "),_m(156),_v(" "),_m(157),_v(" "),_m(158),_v(" "),_c('hr'),_v(" "),_m(159),_v(" "),_m(160),_v(" "),_m(161),_v(" "),_m(162),_v(" "),_m(163),_v(" "),_m(164),_v(" "),_m(165),_v(" "),_m(166),_v(" "),_m(167),_v(" "),_m(168),_v(" "),_m(169),_v(" "),_m(170),_v(" "),_m(171),_v(" "),_m(172),_v(" "),_c('hr'),_v(" "),_m(173),_v(" "),_m(174),_v(" "),_m(175),_v(" "),_m(176),_v(" "),_m(177),_v(" "),_m(178),_v(" "),_m(179),_v(" "),_m(180),_v(" "),_m(181),_v(" "),_m(182),_v(" "),_m(183),_v(" "),_m(184),_v(" "),_m(185),_v(" "),_m(186),_v(" "),_m(187),_v(" "),_m(188),_v(" "),_m(189),_v(" "),_m(190),_v(" "),_c('hr'),_v(" "),_m(191),_v(" "),_c('p',[_v("Given below are instructions to test the app manually.")]),_v(" "),_c('box',{attrs:{"type":"info","seamless":""}},[_v("\n**Note:** These instructions only provide a starting point for testers to work on; testers are expected to do more *exploratory* testing.\n")]),_v(" "),_m(192),_v(" "),_m(193),_v(" "),_m(194),_v(" "),_c('p',[_v("Creates a new wedding where Persons and Tables can be added after it has been set.")]),_v(" "),_m(195),_v(" "),_m(196),_v(" "),_m(197),_v(" "),_m(198),_v(" "),_m(199),_v(" "),_m(200),_v(" "),_c('hr'),_v(" "),_m(201),_v(" "),_c('p',[_v("Sets a wedding that has been created.")]),_v(" "),_m(202),_v(" "),_m(203),_v(" "),_m(204),_v(" "),_m(205),_v(" "),_m(206),_v(" "),_c('hr'),_v(" "),_m(207),_v(" "),_c('p',[_v("Shows an overview of the current wedding including the number of people invited, the number of tables, and the guest names.")]),_v(" "),_m(208),_v(" "),_m(209),_v(" "),_m(210),_v(" "),_c('hr'),_v(" "),_m(211),_v(" "),_c('p',[_v("Deletes the Wedding and removes all instances of the People and the Tables in the wedding.")]),_v(" "),_m(212),_v(" "),_m(213),_v(" "),_m(214),_v(" "),_m(215),_v(" "),_c('hr'),_v(" "),_m(216),_v(" "),_c('p',[_v("Allows you to add people to the currently setWedding.")]),_v(" "),_m(217),_v(" "),_m(218),_v(" "),_m(219),_v(" "),_c('hr'),_v(" "),_m(220),_v(" "),_c('p',[_v("Deletes a person from the currently active wedding's person list, using their displayed index number.")]),_v(" "),_m(221),_v(" "),_m(222),_v(" "),_m(223),_v(" "),_m(224),_v(" "),_c('hr'),_v(" "),_m(225),_v(" "),_c('p',[_v("Allows you to filter your list of persons by applying DIETARYRESTRICTION and/or RSVP status filters.")]),_v(" "),_m(226),_v(" "),_m(227),_v(" "),_c('hr'),_v(" "),_m(228),_v(" "),_c('p',[_v("Adds a table with the specified table ID and capacity to the current wedding.")]),_v(" "),_m(229),_v(" "),_m(230),_v(" "),_m(231),_v(" "),_m(232),_v(" "),_m(233),_v(" "),_c('hr'),_v(" "),_m(234),_v(" "),_c('p',[_v("Deletes a table by its table ID.")]),_v(" "),_m(235),_v(" "),_m(236),_v(" "),_m(237),_v(" "),_m(238),_v(" "),_m(239),_v(" "),_c('hr'),_v(" "),_m(240),_v(" "),_c('p',[_v("Lists all tables currently added to the wedding layout.")]),_v(" "),_m(241),_v(" "),_m(242),_v(" "),_m(243),_v(" "),_c('hr'),_v(" "),_m(244),_v(" "),_c('p',[_v("Finds a table by its ID.")]),_v(" "),_m(245),_v(" "),_m(246),_v(" "),_m(247),_v(" "),_c('hr'),_v(" "),_m(248),_v(" "),_c('p',[_v("Assigns a Person to a specified Table within the currently active wedding.")]),_v(" "),_m(249),_v(" "),_m(250),_v(" "),_m(251),_v(" "),_m(252),_v(" "),_m(253),_v(" "),_c('hr'),_v(" "),_m(254),_v(" "),_c('p',[_v("Removes a person from a table in the currently active wedding.")]),_v(" "),_m(255),_v(" "),_m(256),_v(" "),_m(257),_v(" "),_m(258),_v(" "),_c('hr'),_v(" "),_m(259),_v(" "),_m(260),_v(" "),_m(261),_v(" "),_c('p',[_v("Team size: 5")])],1),_v(" "),_c('overlay-source',{attrs:{"id":"page-nav","tag-name":"nav","to":"page-nav"}},[_c('div',{staticClass:"nav-component slim-scroll"},[_c('overlay-source',{staticClass:"nav nav-pills flex-column my-0 small no-flex-wrap",attrs:{"id":"mb-page-nav","tag-name":"nav","to":"mb-page-nav"}},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#weddinghero-developer-guide"}},[_v("WeddingHero Developer Guide‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#acknowledgements"}},[_v("Acknowledgements‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#setting-up-getting-started"}},[_v("Setting up, getting started‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#design"}},[_v("Design‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#architecture"}},[_v("Architecture‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#ui-component"}},[_v("UI component‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#logic-component"}},[_v("Logic component‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#model-component"}},[_v("Model component‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#storage-component"}},[_v("Storage component‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#common-classes"}},[_v("Common classes‎")])]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#implementation"}},[_v("Implementation‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#addpersontotable-command"}},[_v("addPersonToTable Command‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#proposed-undo-redo-feature"}},[_v("[Proposed] Undo/redo feature‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#proposed-data-archiving"}},[_v("[Proposed] Data archiving‎")])]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#documentation-logging-testing-configuration-dev-ops"}},[_v("Documentation, logging, testing, configuration, dev-ops‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#appendix-requirements"}},[_v("Appendix: Requirements‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#product-scope"}},[_v("Product scope‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#user-stories"}},[_v("User stories‎")])]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-cases-uc"}},[_v("Use cases (UC)‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#uc1-create-a-wedding"}},[_v("UC1: Create a wedding‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#uc2-set-a-wedding"}},[_v("UC2: Set a wedding‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#uc3-wedding-overview"}},[_v("UC3: Wedding Overview‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#uc4-add-a-guest"}},[_v("UC4: Add a Guest‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#uc5-delete-a-guest"}},[_v("UC5: Delete a Guest‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#use-case-edit-a-guest"}},[_v("Use case: Edit a guest‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#uc6-add-a-table"}},[_v("UC6: Add a table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#uc7-delete-a-table"}},[_v("UC7: Delete a table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#uc8-assign-a-guest-to-a-table"}},[_v("UC8: Assign a Guest to a table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#uc9-remove-a-guest-from-a-table"}},[_v("UC9: Remove a Guest from a table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#non-functional-requirements"}},[_v("Non-Functional Requirements‎")])])]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#glossary"}},[_v("Glossary‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#appendix-instructions-for-manual-testing"}},[_v("Appendix: Instructions for manual testing‎")]),_v(" "),_c('nav',{staticClass:"nav nav-pills flex-column my-0 nested no-flex-wrap"},[_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#launch-and-shutdown"}},[_v("Launch and shutdown‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#creating-a-new-wedding"}},[_v("Creating a New Wedding‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#set-wedding"}},[_v("Set Wedding‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#wedding-overview"}},[_v("Wedding Overview‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#delete-wedding"}},[_v("Delete Wedding‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#adding-a-person"}},[_v("Adding a Person‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#deleting-a-person"}},[_v("Deleting a Person‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#filtering-persons"}},[_v("Filtering Persons‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#adding-a-table"}},[_v("Adding a Table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#deleting-a-table"}},[_v("Deleting a Table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#listing-tables"}},[_v("Listing Tables‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#finding-tables"}},[_v("Finding Tables‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#assigning-a-person-to-a-table"}},[_v("Assigning a Person to a Table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#deleting-a-person-from-a-table"}},[_v("Deleting a Person from a Table‎")]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#saving-data"}},[_v("Saving data‎")])]),_v(" "),_c('a',{pre:true,attrs:{"class":"nav-link py-1","href":"#appendix-planned-enhancements"}},[_v("Appendix: Planned Enhancements‎")])])])],1)]),_v(" "),_c('scroll-top-button')],1),_v(" "),_m(262)])}
 };
     var pageVueStaticRenderFns = [function anonymous(
 ) {
@@ -9,6 +9,9 @@ with(this){return _c('h1',{attrs:{"id":"weddinghero-developer-guide"}},[_v("Wedd
 },function anonymous(
 ) {
 with(this){return _c('h2',{attrs:{"id":"acknowledgements"}},[_c('strong',[_v("Acknowledgements")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#acknowledgements","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("The project is based on the AddressBook-Level3 project created by the SE-EDU initiative")]),_v(" "),_c('li',[_v("Github CoPilot was used by Bhavina Sathish Kumar to write trivial test cases and the JavaDocs for some trivial methods")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('em',[_v("{ list here sources of all reused/adapted ideas, code, documentation, and third-party libraries -- include links to the original source as well }")])])}
@@ -131,6 +134,15 @@ with(this){return _c('p',[_v("Classes used by multiple components are in the "),
 with(this){return _c('h2',{attrs:{"id":"implementation"}},[_c('strong',[_v("Implementation")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#implementation","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
+with(this){return _c('h3',{attrs:{"id":"addpersontotable-command"}},[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addPersonToTable")]),_v(" Command"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#addpersontotable-command","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addPersonToTable")]),_v("  allows a user to assign a specific guest to a specific table within the currently active wedding.")])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("Checking that the input format is correct")]),_v(" "),_c('li',[_v("Checking that the specified person exists in the current guest list")]),_v(" "),_c('li',[_v("Checking that the table exists")]),_v(" "),_c('li',[_v("Ensuring the table has available capacity")])])}
+},function anonymous(
+) {
 with(this){return _c('h3',{attrs:{"id":"proposed-undo-redo-feature"}},[_v("[Proposed] Undo/redo feature"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#proposed-undo-redo-feature","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
@@ -218,16 +230,16 @@ with(this){return _c('h3',{attrs:{"id":"user-stories"}},[_v("User stories"),_c('
 with(this){return _c('p',[_v("Priorities: High (must have) - "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("* * *")]),_v(", Medium (nice to have) - "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("* *")]),_v(", Low (unlikely to have) - "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("*")])])}
 },function anonymous(
 ) {
-with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticClass:"markbind-table table table-bordered table-striped"},[_c('thead',[_c('tr',[_c('th',[_v("Priority")]),_v(" "),_c('th',[_v("As a...")]),_v(" "),_c('th',[_v("I want to...")]),_v(" "),_c('th',[_v("So that I can")])])]),_v(" "),_c('tbody',[_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("make changes to my clients plans")]),_v(" "),_c('td')]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner of a couple that can't make up their mind")]),_v(" "),_c('td',[_v("add and delete the guest list")]),_v(" "),_c('td',[_v("should the couple decide to make changes")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner of a couple with lots of guests")]),_v(" "),_c('td',[_v("indicate whether a guest is confirmed, unconfirmed, or cancelled")]),_v(" "),_c('td',[_v("cater enough food for them")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("keep track of dietary restrictions for guests")]),_v(" "),_c('td',[_v("ensure the catering meets everyone's needs")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("track guest RSVPs and their meal preferences")]),_v(" "),_c('td',[_v("finalise catering and seating arrangements efficiently")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("assign guests to tables")]),_v(" "),_c('td',[_v("ensure no seats are left empty within a table")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner of high profile clients")]),_v(" "),_c('td',[_v("store information about guests like contact details, address")]),_v(" "),_c('td',[_v("send out personalised invitation cards")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("see a quick overview of a specific wedding")]),_v(" "),_c('td',[_v("easily determine the number of guests and tables currently assigned to my client's wedding")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner with multiple clients")]),_v(" "),_c('td',[_v("view the entire guest list assigned to one of my weddings easily")]),_v(" "),_c('td',[_v("quickly look through guests' information")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("experienced wedding planner")]),_v(" "),_c('td',[_v("set the number of tables early to gauge the number of guests my client has")]),_v(" "),_c('td',[_v("easily manage other logistics such as venue decision, food catering etc.")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("decide how many guests should be seated at one table")]),_v(" "),_c('td',[_v("customise it to my clients' needs")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("view the entire table list quickly")]),_v(" "),_c('td',[_v("quickly see the list of tables and their capacities")])]),_v(" "),_c('tr',[_c('td',[_v("**")]),_v(" "),_c('td',[_v("organised wedding planner")]),_v(" "),_c('td',[_v("filter guests based on their dietary restrictions and RSVP status")]),_v(" "),_c('td',[_v("view guests based on a specific category")])]),_v(" "),_c('tr',[_c('td',[_v("**")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("maintain personal notes and comments on tasks")]),_v(" "),_c('td',[_v("keep track of important details and task progress")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("forgetful wedding planner")]),_v(" "),_c('td',[_v("mark the status of the vendor list")]),_v(" "),_c('td',[_v("keep track of whether a vendor has confirmed")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("detailed wedding planner")]),_v(" "),_c('td',[_v("see a list of upcoming tasks that are most urgent")]),_v(" "),_c('td',[_v("pay attention to them first")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("create a library of preferred vendors and pricing details")]),_v(" "),_c('td',[_v("easily recommend the best options to my clients")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("send scheduled messages to the guests, vendors, and photographers")]),_v(" "),_c('td',[_v("they can be reminded of the upcoming schedule and deadlines")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("get a contact list of wedding-related vendors nearby")]),_v(" "),_c('td',[_v("I don't have to worry about looking them up personally")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("track expenses against a set budget")]),_v(" "),_c('td',[_v("I stay informed of the wedding costs")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("share a to-do list with my clients")]),_v(" "),_c('td',[_v("we can stay on the same page about what needs to be done")])])])])])}
+with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticClass:"markbind-table table table-bordered table-striped"},[_c('thead',[_c('tr',[_c('th',[_v("Priority")]),_v(" "),_c('th',[_v("As a...")]),_v(" "),_c('th',[_v("I want to...")]),_v(" "),_c('th',[_v("So that I can")])])]),_v(" "),_c('tbody',[_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("make changes to my clients plans")]),_v(" "),_c('td')]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner of a couple that can’t make up their mind")]),_v(" "),_c('td',[_v("add and delete the guest list")]),_v(" "),_c('td',[_v("change the guest list should the couple decide to make changes")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner of a couple with lots of guests")]),_v(" "),_c('td',[_v("indicate whether a guest is confirmed, unconfirmed, or cancelled")]),_v(" "),_c('td',[_v("cater enough food for them")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("keep track of dietary restrictions for guests")]),_v(" "),_c('td',[_v("ensure the catering meets everyone’s needs")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("track guest RSVPs and their meal preferences")]),_v(" "),_c('td',[_v("finalise catering and seating arrangements efficiently")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("assign guests to tables")]),_v(" "),_c('td',[_v("ensure no seats are left empty within a table")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner of high profile clients")]),_v(" "),_c('td',[_v("store information about guests like contact details, address")]),_v(" "),_c('td',[_v("send out personalised invitation cards")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("see a quick overview of a specific wedding")]),_v(" "),_c('td',[_v("easily determine the number of guests and tables currently assigned to my client's wedding")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner with multiple clients")]),_v(" "),_c('td',[_v("view the entire guest list assigned to one of my weddings easily")]),_v(" "),_c('td',[_v("quickly look through guests’ information")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("experienced wedding planner")]),_v(" "),_c('td',[_v("set the number of tables early to gauge the number of guests my client has")]),_v(" "),_c('td',[_v("easily manage other logistics such as venue decision, food catering etc.")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("decide how many guests should be seated at one table")]),_v(" "),_c('td',[_v("customise it to my clients’ needs")])]),_v(" "),_c('tr',[_c('td',[_v("***")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("view the entire table list quickly")]),_v(" "),_c('td',[_v("quickly see the list of tables and their capacities")])]),_v(" "),_c('tr',[_c('td',[_v("**")]),_v(" "),_c('td',[_v("organised wedding planner")]),_v(" "),_c('td',[_v("filter guests based on their dietary restrictions and RSVP status")]),_v(" "),_c('td',[_v("view guests based on a specific category")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("forgetful wedding planner")]),_v(" "),_c('td',[_v("mark the status of the vendor list")]),_v(" "),_c('td',[_v("keep track of whether a vendor has confirmed")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("detailed wedding planner")]),_v(" "),_c('td',[_v("see a list of upcoming tasks that are most urgent")]),_v(" "),_c('td',[_v("pay attention to them first")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("create a library of preferred vendors and pricing details")]),_v(" "),_c('td',[_v("easily recommend the best options to my clients")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("get a contact list of wedding-related vendors nearby")]),_v(" "),_c('td',[_v("I don’t have to worry about looking them up personally")])]),_v(" "),_c('tr',[_c('td',[_v("*")]),_v(" "),_c('td',[_v("wedding planner")]),_v(" "),_c('td',[_v("track expenses against a set budget")]),_v(" "),_c('td',[_v("I stay informed of the wedding costs")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('h2',{attrs:{"id":"use-cases"}},[_v("Use cases"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-cases","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h2',{attrs:{"id":"use-cases-uc"}},[_v("Use cases (UC)"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-cases-uc","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("(For all use cases below, the "),_c('strong',[_v("System")]),_v(" is the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("WeddingHero")]),_v(" and the "),_c('strong',[_v("guest")]),_v(" is the guest invited to the wedding, unless specified otherwise)")])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"use-case-create-a-wedding"}},[_v("Use case: Create a wedding"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-create-a-wedding","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"uc1-create-a-wedding"}},[_v("UC1: Create a wedding"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc1-create-a-wedding","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -245,7 +257,7 @@ with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Invalid Wedding Name")]),_
 with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Duplicate Wedding Name")]),_v("\n2b1. System detects that a wedding with the same name already exists.\n2b2. System informs the user that the wedding name is already in use.\n2b3. System prompts the user to provide a different wedding name.\n2b4. If the user provides a unique name, the process resumes at step 3.")])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"use-case-set-a-wedding"}},[_v("Use case: Set a wedding"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-set-a-wedding","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"uc2-set-a-wedding"}},[_v("UC2: Set a wedding"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc2-set-a-wedding","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
@@ -275,19 +287,25 @@ with(this){return _c('ol',[_c('li',[_v("User requests to set a wedding as active
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Wedding Name")]),_v("\n2a1. System detects that no wedding name was provided.\n2a2. System informs the user that a wedding name is required.\n2a3. System prompts the user to provide a wedding name.\n2a4. If the user provides a wedding name, the process resumes at step 3.")])}
+with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Wedding Name")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Non-Existent Wedding")]),_v("\n2b1. System cannot find the specified wedding.\n2b2. System informs the user that the wedding does not exist.\n2b3. System prompts the user to provide a valid wedding name.\n2b4. If the user provides a valid wedding name, the process resumes at step 3.")])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System detects that no wedding name was provided.")]),_v(" "),_c('li',[_v("2a2. System informs the user that a wedding name is required.")]),_v(" "),_c('li',[_v("2a3. System prompts the user to provide a wedding name.")]),_v(" "),_c('li',[_v("2a4. If the user provides a wedding name, the process resumes at step 3.")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"use-case-wedding-overview"}},[_v("Use case: Wedding Overview"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-wedding-overview","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Non-Existent Wedding")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("2b1. System cannot find the specified wedding.")]),_v(" "),_c('li',[_v("2b2. System informs the user that the wedding does not exist.")]),_v(" "),_c('li',[_v("2b3. System prompts the user to provide a valid wedding name.")]),_v(" "),_c('li',[_v("2b4. If the user provides a valid wedding name, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"uc3-wedding-overview"}},[_v("UC3: Wedding Overview"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc3-wedding-overview","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("A wedding has been created.")]),_v(" "),_c('li',[_v("A wedding has been set as the active wedding.")])])}
+with(this){return _c('ul',[_c('li',[_v("The wedding has been set as the active wedding in WeddingHero.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -299,10 +317,13 @@ with(this){return _c('ol',[_c('li',[_v("User requests to view the wedding overvi
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2a. "),_c('strong',[_v("No Active Wedding Set")]),_v("\n2a1. System detects that no wedding is currently set.\n2a2. System informs the user that an active wedding must be set first.\n2a3. System prompts the user to set a wedding as active.\n2a4. Once a wedding is set as active, the user may request the overview again.")])}
+with(this){return _c('p',[_v("2a. "),_c('strong',[_v("No Active Wedding Set")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"use-case-add-a-guest"}},[_v("Use case: Add a guest"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-add-a-guest","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System detects that no wedding is currently set.")]),_v(" "),_c('li',[_v("2a2. System informs the user that an active wedding must be set first.")]),_v(" "),_c('li',[_v("2a3. System prompts the user to set a wedding as active.")]),_v(" "),_c('li',[_v("2a4. Once a wedding is set as active, the user may request the overview again.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"uc4-add-a-guest"}},[_v("UC4: Add a Guest"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc4-add-a-guest","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
@@ -320,16 +341,25 @@ with(this){return _c('ol',[_c('li',[_v("User requests to add a new guest.")]),_v
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Required Information")]),_v("\n2a1. System detects that required guest information is missing.\n2a2. System informs the user which information is required.\n2a3. System prompts the user to provide the missing information.\n2a4. If the user provides the required information, the process resumes at step 3.")])}
+with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Required Information")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Invalid Information Format")]),_v("\n2b1. System detects that some information is in an invalid format.\n2b2. System informs the user which information is invalid and why.\n2b3. System prompts the user to correct the invalid information.\n2b4. If the user provides valid information, the process resumes at step 3.")])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System detects that required guest information is missing.")]),_v(" "),_c('li',[_v("2a2. System informs the user which information is required.")]),_v(" "),_c('li',[_v("2a3. System prompts the user to provide the missing information.")]),_v(" "),_c('li',[_v("2a4. If the user provides the required information, the process resumes at step 3.")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2c. "),_c('strong',[_v("Duplicate Guest")]),_v("\n2c1. System detects that a guest with the same name already exists.\n2c2. System informs the user that the guest already exists.\n2c3. System prompts the user to either modify the guest's name or cancel.\n2c4. If the user provides unique name, the process resumes at step 3.")])}
+with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Invalid Information Format")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"use-case-delete-a-guest"}},[_v("Use case: Delete a guest"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-delete-a-guest","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('ul',[_c('li',[_v("2b1. System detects that some information is in an invalid format.")]),_v(" "),_c('li',[_v("2b2. System informs the user which information is invalid and why.")]),_v(" "),_c('li',[_v("2b3. System prompts the user to correct the invalid information.")]),_v(" "),_c('li',[_v("2b4. If the user provides valid information, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("2c. "),_c('strong',[_v("Duplicate Guest")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("2c1. System detects that a guest with the same name already exists.")]),_v(" "),_c('li',[_v("2c2. System informs the user that the guest already exists.")]),_v(" "),_c('li',[_v("2c3. System prompts the user to either modify the guest's name or cancel.")]),_v(" "),_c('li',[_v("2c4. If the user provides unique name, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"uc5-delete-a-guest"}},[_v("UC5: Delete a Guest"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc5-delete-a-guest","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
@@ -344,10 +374,10 @@ with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 with(this){return _c('ol',[_c('li',[_v("User requests to view the guest list.")]),_v(" "),_c('li',[_v("System displays the list of guests.")]),_v(" "),_c('li',[_v("User selects a guest to delete.")]),_v(" "),_c('li',[_v("System removes the selected guest from the guest list.")]),_v(" "),_c('li',[_v("System confirms that the guest has been deleted.\nUse case ends.")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
+with(this){return _c('p',[_c('strong',[_v("Extensions:")]),_v("\n3a. "),_c('strong',[_v("Invalid Guest Selection")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("3a. "),_c('strong',[_v("Invalid Guest Selection")]),_v("\n3a1. System detects that the selected guest does not exist.\n3a2. System informs the user that the selection is invalid.\n3a3. System prompts the user to make a valid selection.\n3a4. If the user makes a valid selection, the process resumes at step 4.")])}
+with(this){return _c('ul',[_c('li',[_v("3a1. System detects that the selected guest does not exist.")]),_v(" "),_c('li',[_v("3a2. System informs the user that the selection is invalid.")]),_v(" "),_c('li',[_v("3a3. System prompts the user to make a valid selection.")]),_v(" "),_c('li',[_v("3a4. If the user makes a valid selection, the process resumes at step 4.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-edit-a-guest"}},[_v("Use case: Edit a guest"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-edit-a-guest","onclick":"event.stopPropagation()"}})])}
@@ -368,43 +398,25 @@ with(this){return _c('ol',[_c('li',[_v("User requests to view the guest list.")]
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("3a. "),_c('strong',[_v("Invalid Guest Selection")]),_v("\n3a1. System detects that the selected guest does not exist.\n3a2. System informs the user that the selection is invalid.\n3a3. System prompts the user to make a valid selection.\n3a4. If the user makes a valid selection, the process resumes at step 4.")])}
+with(this){return _c('p',[_v("3a. "),_c('strong',[_v("Invalid Guest Selection")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("4a. "),_c('strong',[_v("Invalid Information Format")]),_v("\n4a1. System detects that some new information is in an invalid format.\n4a2. System informs the user which information is invalid and why.\n4a3. System prompts the user to correct the invalid information.\n4a4. If the user provides valid information, the process resumes at step 5.")])}
+with(this){return _c('ul',[_c('li',[_v("3a1. System detects that the selected guest does not exist.")]),_v(" "),_c('li',[_v("3a2. System informs the user that the selection is invalid.")]),_v(" "),_c('li',[_v("3a3. System prompts the user to make a valid selection.")]),_v(" "),_c('li',[_v("3a4. If the user makes a valid selection, the process resumes at step 4.")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("4b. "),_c('strong',[_v("Duplicate Guest")]),_v("\n4b1. System detects that the updated information would create a duplicate guest.\n4b2. System informs the user that the changes would create a duplicate.\n4b3. System prompts the user to modify the information to avoid duplication.\n4b4. If the user provides unique information, the process resumes at step 5.")])}
+with(this){return _c('p',[_v("4a. "),_c('strong',[_v("Invalid Information Format")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"use-case-add-a-table"}},[_v("Use case: Add a table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-add-a-table","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('ul',[_c('li',[_v("4a1. System detects that some new information is in an invalid format.")]),_v(" "),_c('li',[_v("4a2. System informs the user which information is invalid and why.")]),_v(" "),_c('li',[_v("4a3. System prompts the user to correct the invalid information.")]),_v(" "),_c('li',[_v("4a4. If the user provides valid information, the process resumes at step 5.")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
+with(this){return _c('p',[_v("4b. "),_c('strong',[_v("Duplicate Guest")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("A wedding has been created.")]),_v(" "),_c('li',[_v("A wedding has been set as the active wedding.")])])}
+with(this){return _c('ul',[_c('li',[_v("4b1. System detects that the updated information would create a duplicate guest.")]),_v(" "),_c('li',[_v("4b2. System informs the user that the changes would create a duplicate.")]),_v(" "),_c('li',[_v("4b3. System prompts the user to modify the information to avoid duplication.")]),_v(" "),_c('li',[_v("4b4. If the user provides unique information, the process resumes at step 5.")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("MSS")])])}
-},function anonymous(
-) {
-with(this){return _c('ol',[_c('li',[_v("User requests to add a new table.")]),_v(" "),_c('li',[_v("User provides:\n"),_c('ul',[_c('li',[_v("Table ID")]),_v(" "),_c('li',[_v("Table capacity")])])]),_v(" "),_c('li',[_v("System validates the provided information.")]),_v(" "),_c('li',[_v("System adds the table to the current wedding's layout.")]),_v(" "),_c('li',[_v("System confirms that the table has been added successfully.\nUse case ends.")])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Required Information")]),_v("\n2a1. System detects that required table information is missing.\n2a2. System informs the user which information is required.\n2a3. System prompts the user to provide the missing information.\n2a4. If the user provides the required information, the process resumes at step 3.")])}
-},function anonymous(
-) {
-with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Invalid Information Format")]),_v("\n2b1. System detects that some information is in an invalid format.\n2b2. System informs the user which information is invalid and why.\n2b3. System prompts the user to correct the invalid information.\n2b4. If the user provides valid information, the process resumes at step 3.")])}
-},function anonymous(
-) {
-with(this){return _c('p',[_v("2c. "),_c('strong',[_v("Duplicate Table ID")]),_v("\n2c1. System detects that a table with the same ID already exists.\n2c2. System informs the user that the table ID is already in use.\n2c3. System prompts the user to provide a different table ID.\n2b4. If the user provides a unique table ID, the process resumes at step 3.")])}
-},function anonymous(
-) {
-with(this){return _c('h3',{attrs:{"id":"use-case-delete-a-table"}},[_v("Use case: Delete a table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-delete-a-table","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"uc6-add-a-table"}},[_v("UC6: Add a table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc6-add-a-table","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
@@ -416,16 +428,142 @@ with(this){return _c('ul',[_c('li',[_v("A wedding has been created.")]),_v(" "),
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User requests to delete a table.")]),_v(" "),_c('li',[_v("User provides the table ID.")]),_v(" "),_c('li',[_v("System verifies the table exists.")]),_v(" "),_c('li',[_v("System removes the table from the wedding layout.")]),_v(" "),_c('li',[_v("System confirms that the table has been deleted.\nUse case ends.")])])}
+with(this){return _c('ol',[_c('li',[_v("User decides to add a new table.")]),_v(" "),_c('li',[_v("User enters the command the table ID.")]),_v(" "),_c('li',[_v("WeddingHero validates that the table ID is unique and that the capacity is a valid positive integer.")]),_v(" "),_c('li',[_v("WeddingHero adds the table to the current wedding")]),_v(" "),_c('li',[_v("WeddingHero displays a confirmation message indicating that the table has been successfully added.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Table ID")]),_v("\n2a1. System detects that no table ID was provided.\n2a2. System informs the user that a table ID is required.\n2a3. System prompts the user to provide a table ID.\n2a4. If the user provides a table ID, the process resumes at step 3.")])}
+with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Required Information")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Non-Existent Table")]),_v("\n2b1. System cannot find the specified table.\n2b2. System informs the user that the table does not exist.\n2b3. System prompts the user to provide a valid table ID.\n2b4. If the user provides a valid table ID, the process resumes at step 3.")])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System detects that required table information is missing.")]),_v(" "),_c('li',[_v("2a2. System informs the user which information is required.")]),_v(" "),_c('li',[_v("2a3. System prompts the user to provide the missing information.")]),_v(" "),_c('li',[_v("2a4. If the user provides the required information, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Invalid Information Format")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("2b1. System detects that some information is in an invalid format.")]),_v(" "),_c('li',[_v("2b2. System informs the user which information is invalid and why.")]),_v(" "),_c('li',[_v("2b3. System prompts the user to correct the invalid information.")]),_v(" "),_c('li',[_v("2b4. If the user provides valid information, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("2c. "),_c('strong',[_v("Duplicate Table ID")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("2c1. System detects that a table with the same ID already exists.")]),_v(" "),_c('li',[_v("2c2. System informs the user that the table ID is already in use.")]),_v(" "),_c('li',[_v("2c3. System prompts the user to provide a different table ID.")]),_v(" "),_c('li',[_v("2b4. If the user provides a unique table ID, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"uc7-delete-a-table"}},[_v("UC7: Delete a table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc7-delete-a-table","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("A wedding has been created.")]),_v(" "),_c('li',[_v("A wedding has been set as the active wedding in WeddingHero.")]),_v(" "),_c('li',[_v("The table to be deleted is created")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("MSS")])])}
+},function anonymous(
+) {
+with(this){return _c('ol',[_c('li',[_v("User requests to delete a table.")]),_v(" "),_c('li',[_v("User provides the table ID.")]),_v(" "),_c('li',[_v("WeddingHero checks if the table exists.")]),_v(" "),_c('li',[_v("WeddingHero deletes the table from the layout.")]),_v(" "),_c('li',[_v("WeddingHero confirms that the table has been deleted.\nUse case ends.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Missing Table ID")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("2a1. If the user omits the table ID when entering the command, WeddingHero displays an error message indicating that the table ID is required.")]),_v(" "),_c('li',[_v("2a2. WeddingHero prompts the user to re-enter the command with the correct format.")]),_v(" "),_c('li',[_v("2a3. Once the correct input is provided, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("2b. "),_c('strong',[_v("Table Not Found")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("2b1. If WeddingHero is unable to locate a table matching the provided ID, it informs the user that no matching table was found.")]),_v(" "),_c('li',[_v("2b2. WeddingHero prompts the user to either re-enter a valid table ID.")]),_v(" "),_c('li',[_v("2b3. If the user provides a valid table ID, the process resumes at step 3. Otherwise, use case ends.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"uc8-assign-a-guest-to-a-table"}},[_v("UC8: Assign a Guest to a table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc8-assign-a-guest-to-a-table","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("A wedding has been created.")]),_v(" "),_c('li',[_v("The wedding has been set as the active wedding in WeddingHero.")]),_v(" "),_c('li',[_v("At least one table has been created.")]),_v(" "),_c('li',[_v("The guest to be added has already been added to the wedding")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("MSS")])])}
+},function anonymous(
+) {
+with(this){return _c('ol',[_c('li',[_v("User requests to assign a guest to a table.")]),_v(" "),_c('li',[_v("User adds the table and the guest")]),_v(" "),_c('li',[_v("WeddingHero verifies that the guest and table exist.")]),_v(" "),_c('li',[_v("WeddingHero assigns the guest to the specified table.")]),_v(" "),_c('li',[_v("WeddingHero displays a confirmation message.\nUse case ends.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("3a. "),_c('strong',[_v("Person Not Found")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("3a1. If the specified guest does not exist, WeddingHero informs the user.")]),_v(" "),_c('li',[_v("3a2. User is prompted to re-enter a valid guest name.")]),_v(" "),_c('li',[_v("3a3. Upon valid input, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("4a. "),_c('strong',[_v("Table Not Found")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("4a1. If the table ID does not match any existing table, WeddingHero informs the user.")]),_v(" "),_c('li',[_v("4a2. User is prompted to re-enter a valid table ID.")]),_v(" "),_c('li',[_v("4a3. Upon valid input, the process resumes at step 4.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("4b. "),_c('strong',[_v("Table Full")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("4b1. If the table has reached its maximum capacity, WeddingHero displays an error message.")]),_v(" "),_c('li',[_v("4b2. User is prompted to select another table or modify the table capacity.")]),_v(" "),_c('li',[_v("4b3. If the user selects another table, the process resumes at step 4.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Invalid Input Format")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("2a1. If the input is missing required fields or incorrectly formatted, WeddingHero displays an error message showing the correct format.")]),_v(" "),_c('li',[_v("2a2. Upon receiving the correct input, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"uc9-remove-a-guest-from-a-table"}},[_v("UC9: Remove a Guest from a table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc9-remove-a-guest-from-a-table","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Preconditions:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("A wedding has been created.")]),_v(" "),_c('li',[_v("The wedding has been set as the active wedding in WeddingHero.")]),_v(" "),_c('li',[_v("A person has already been assigned to a table.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("MSS")])])}
+},function anonymous(
+) {
+with(this){return _c('ol',[_c('li',[_v("User decides to remove a guest from a table.")]),_v(" "),_c('li',[_v("User enters the table and the guest to be removed")]),_v(" "),_c('li',[_v("WeddingHero checks if the specified person exists and is assigned to the specified table.")]),_v(" "),_c('li',[_v("WeddingHero removes the person from the table.")]),_v(" "),_c('li',[_v("WeddingHero displays a confirmation message that the guest has been successfully removed from the table."),_c('br'),_v("\nUse case ends.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("3a. "),_c('strong',[_v("Guest Not Found")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("3a1. If the specified guest does not exist, WeddingHero informs the user.")]),_v(" "),_c('li',[_v("3a2. User is prompted to re-enter a valid person name.")]),_v(" "),_c('li',[_v("3a3. Upon valid input, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("3b. "),_c('strong',[_v("Table Not Found")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("3b1. If the specified table does not exist, WeddingHero informs the user.")]),_v(" "),_c('li',[_v("3b2. User is prompted to re-enter a valid table ID.")]),_v(" "),_c('li',[_v("3b3. Upon valid input, the process resumes at step 3.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("3c. "),_c('strong',[_v("Guest Not Assigned to Table")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("3c1. If the person is not assigned to the specified table, WeddingHero informs the user.")]),_v(" "),_c('li',[_v("3c2. User may choose to cancel or try another table ID.")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_v("2a. "),_c('strong',[_v("Invalid Input Format")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_v("2a1. If the input is missing required fields or incorrectly formatted, WeddingHero displays an error message showing the correct format.")]),_v(" "),_c('li',[_v("2a2. Upon receiving the correct input, the process resumes at step 3.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"non-functional-requirements"}},[_v("Non-Functional Requirements"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#non-functional-requirements","onclick":"event.stopPropagation()"}})])}
@@ -446,7 +584,202 @@ with(this){return _c('h2',{attrs:{"id":"appendix-instructions-for-manual-testing
 with(this){return _c('h3',{attrs:{"id":"launch-and-shutdown"}},[_v("Launch and shutdown"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#launch-and-shutdown","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("Initial launch")]),_v(" "),_c('ol',[_c('li',[_v("Download the jar file and copy it into an empty folder.")]),_v(" "),_c('li',[_v("Double-click the jar file.\nExpected: Shows the GUI with a set of sample contacts. The window size may not be optimum.")])])]),_v(" "),_c('li',[_c('p',[_v("Saving window preferences")]),_v(" "),_c('ol',[_c('li',[_v("Resize the window to an optimum size. Move the window to a different location. Close the window.")]),_v(" "),_c('li',[_v("Re-launch the app by double-clicking the jar file.\nExpected: The most recent window size and location is retained.")])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases … }")])])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("Initial launch\n1a. Download the jar file and copy it into an empty folder.\n1b. Double-click the jar file.\nExpected: Shows the GUI with a set of sample contacts. The window size may not be optimum.")])]),_v(" "),_c('li',[_c('p',[_v("Saving window preferences\n2a.Resize the window to an optimum size. Move the window to a different location. Close the window.\n2b.Re-launch the app by double-clicking the jar file.\nExpected: The most recent window size and location is retained.")])])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"creating-a-new-wedding"}},[_v("Creating a New Wedding"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#creating-a-new-wedding","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" None")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("createWedding n/John & Jane Wedding")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" New Wedding is added to the list. A message that a new wedding has been created is shown.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("createWedding n/John & Jane Wedding")]),_v(", then do the command"),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("createWedding n/John & Jane Wedding")]),_v(" again")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Expected Result:")]),_v(" A message that a wedding already exists with the name is shown.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Commands:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("createWedding John")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("createWedding")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" Error details of incorrect format and right usage are shown in the status message.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"set-wedding"}},[_v("Set Wedding"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#set-wedding","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" Wedding John & Jane has been created")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setWedding n/John & Jane")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" A message would be shown to indicate that the wedding has been set, and this would be reflected in the GUI.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setWedding n/Aikeen & Dueet")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" An error message would be shown to indicate there is no such wedding.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Commands:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setWedding John")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setWedding")])])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"wedding-overview"}},[_v("Wedding Overview"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#wedding-overview","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" A wedding has been set")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("weddingOverview")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" A message showing the number of people attending, the number of tables present and the guest names would be shown.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Command:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("weddingOverview n/")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" An error message showing that it is an incorrect command is shown.")])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"delete-wedding"}},[_v("Delete Wedding"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#delete-wedding","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" A Wedding named John & Jane has been created")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deleteWedding n/John & Jane")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" The wedding of John & Jane is deleted. A message is shown that the wedding has been deleted.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deleteWedding n/Aikeen & Dueet")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" No such error message is shown.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Command:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deleteWedding")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" A message showing the correct error message is shown.")])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"adding-a-person"}},[_v("Adding a Person"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-a-person","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" A Wedding named John & Jane has been created, and the wedding has been set")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addPerson n/John Doe p/12345678 e/johndoe@example.com a/123 Street d/NONE r/YES")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" The person John Does is added to the current wedding, and is reflected in the GUI.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Command:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addPerson n/John Doe p/12345678 e/johndoe@example.com a/123 Street d/NONE r/WHAT_HELP")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" An error message is shown.")])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"deleting-a-person"}},[_v("Deleting a Person"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-a-person","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" A Wedding named John & Jane has been created, and the wedding has been set. John Doe has been added, and is the first person shown in the list")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deletePerson 1")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" The first person on the list, eg. John Doe would be deleted.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Commands:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deletePerson -8")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deletePerson a")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" An error message showing the correct input format is given.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"filtering-persons"}},[_v("Filtering Persons"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#filtering-persons","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" You have created and set a wedding, with a person with "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("n/John Doe")]),_v(" added with the HALAL dietary restriction")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("filterPersons r/Halal")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" You would have a filtered list of persons with the HALAL tag, including John Doe.")])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"adding-a-table"}},[_v("Adding a Table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-a-table","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" A Wedding has been created and set")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addTable tid/12 c/8")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" Will add a table, and would be reflected in the GUI.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addTable tid/120 c/8")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" Would show that the ID is above the set limit.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Commands:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addTable 120 8")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addTable tid/ss c/3")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" An error message showing that it is an incorrect error message is shown.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"deleting-a-table"}},[_v("Deleting a Table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-a-table","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" A Wedding has been created and set. Only a table with table id 1 has been added.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deleteTable tid/1")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" The table with tableID one has been deleted and it would be removed from the list.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deleteTable tid/199")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" An error message would be shown that the table does not exist.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Commands:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deleteTable 2")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deleteTable")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deleteTable 3a")])])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"listing-tables"}},[_v("Listing Tables"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#listing-tables","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" A Wedding has been created and set. Only a table with table id 1 has been added.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("getTables")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" The list of current tables is shown.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Command:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("getTables a")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" Would give an error message regarding the input.")])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"finding-tables"}},[_v("Finding Tables"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#finding-tables","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("findTable tid/12")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" Displays the table with the id 12.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Commands:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("findTables 1")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("findTables a")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" Would give an error message regarding the input.")])])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"assigning-a-person-to-a-table"}},[_v("Assigning a Person to a Table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#assigning-a-person-to-a-table","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" A Wedding has been created and set. Only a table with table id 1 has been added. A person with the name John Doe has been added.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addPersonToTable n/John Doe tid/1")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" The table 5 has a person named John Doe, and the person has the corresponding ID.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addPersonToTable n/John x Doe tid/1")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" Won’t add the person to the table, as the person does not exist.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addPersonToTable n/John Doe tid/3")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" Won’t add the person to the table, as the table does not exist.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Incorrect Test Command:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addPersonToTable John Doe t1")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" Would give an error message regarding the input.")])}
+},function anonymous(
+) {
+with(this){return _c('h3',{attrs:{"id":"deleting-a-person-from-a-table"}},[_v("Deleting a Person from a Table"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-a-person-from-a-table","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Prerequisites:")]),_v(" A Wedding has been created and set. Only a table with table id 1 has been added. A person with the name John Doe has been added and assigned to the table.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deletePersonFromTable n/John Doe tid/5")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" The person is deleted from the table.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deletePersonFromTable n/John Doee tid/5")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" A message that the person does not exist would be shown.")])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Test case:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("deletePersonFromTable n/John Doe tid/3")]),_c('br'),_v(" "),_c('strong',[_v("Expected Result:")]),_v(" A message that the table does not exist would be shown.")])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#saving-data","onclick":"event.stopPropagation()"}})])}
@@ -455,6 +788,9 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases … }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Mon, 7 Apr 2025, 19:20:39 GMT+8]")])])])}
+with(this){return _c('h2',{attrs:{"id":"appendix-planned-enhancements"}},[_c('strong',[_v("Appendix: Planned Enhancements")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#appendix-planned-enhancements","onclick":"event.stopPropagation()"}})])}
+},function anonymous(
+) {
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Mon, 7 Apr 2025, 21:07:05 GMT+8]")])])])}
 }];
   
