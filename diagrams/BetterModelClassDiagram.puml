@@ -8,12 +8,12 @@ AddressBook -right-> "1" Wedding
 AddressBook -right-> "1" UniqueTableList
 AddressBook -right-> "1" UniquePersonList
 AddressBook -right-> "1" UniqueWeddingList
-UniquePersonList *--> Person
-UniqueTableList *--> Table
-UniqueWeddingList *--> Wedding
-Wedding --> UniqueTableList
+UniquePersonList --> "~*" Person
+UniqueTableList --> "~*" Table
+UniqueWeddingList --> "~*" Wedding
+Wedding --> "1" UniqueTableList
 Wedding --> UniquePersonList
-Table *-> UniquePersonList
+Table -> "1" UniquePersonList
 
 Person --> Name
 Person --> Phone

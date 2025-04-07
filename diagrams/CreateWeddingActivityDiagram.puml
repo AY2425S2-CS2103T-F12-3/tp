@@ -1,0 +1,23 @@
+@startuml
+start
+
+:User enters command
+"createWedding n/John and Jane's Wedding";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  :Extract wedding name;
+  if (Wedding with the same name exists?) then (yes)
+    :Show the "Wedding already exists" error;
+  else (no)
+    :Create a new wedding;
+    :Save to storage;
+    :Show success message;
+  endif
+else (no)
+  :Show that the Format is wrong;
+endif
+
+stop
+@enduml

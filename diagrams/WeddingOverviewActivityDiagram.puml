@@ -1,0 +1,33 @@
+@startuml
+start
+
+:User enters command
+"weddingOverview";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  if (A wedding has been set as the 'current' wedding?) then (yes)
+    :Retrieve the 'current' wedding;
+    :Make the 'current' wedding display all of its invited people;
+    :Make the 'current' wedding display all of its used tables;
+    :Retrieve the list of tables used in this 'current' wedding;
+    :Get the number of tables used in this 'current' wedding;
+    :Retrieve the list of persons invited to this 'current' wedding;
+    :Get the number of persons invited to this 'current' wedding;
+    if (There is at least 1 person invited to this 'current' wedding?) then (yes)
+      :Get the information about each person invited to this 'current' wedding;
+      :Output all collected information;
+    else (no)
+      :Show that no such wedding with the given name exists;
+      :Output all collected information;
+    endif
+  else (no)
+    :Show that there is no 'current' wedding to get an overview of;
+  endif
+else (no)
+  :Show that the format is wrong;
+endif
+
+stop
+@enduml

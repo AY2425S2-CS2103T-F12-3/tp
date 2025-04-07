@@ -15,16 +15,16 @@ if (Command format valid?) then (yes)
         :Save to storage;
         :Show success message;
       else (no)
-        :Shows the  "Table is full" error;
+        :Show the  "Table is full" error;
       endif
     else (no)
-      :Shows the "Table not found" error;
+      :Show the "Table not found" error;
     endif
   else (no)
-    :Shows the "Person not found" error;
+    :Show the "Person not found" error;
   endif
 else (no)
-  :Shows that the Format is wrong;
+  :Show that the format is wrong;
 endif
 
 stop
