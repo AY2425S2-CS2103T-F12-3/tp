@@ -155,6 +155,7 @@
         "deleting-a-guest-deleteperson": "Deleting a Guest : deletePerson",
         "editing-a-guest-edit": "Editing a Guest : edit",
         "filtering-guests-filterpersons": "Filtering Guests: filterPersons",
+        "finding-a-guest-find": "Finding a Guest: find",
         "listing-guests-list": "Listing Guests: list",
         "managing-tables": "Managing Tables",
         "adding-a-table-addtable": "Adding a Table : addTable",
@@ -171,6 +172,7 @@
         "allowed-dietaryrestriction-values": "Allowed DIETARYRESTRICTION values:",
         "allowed-rsvp-values": "Allowed RSVP values:",
         "faq": "FAQ",
+        "planned-enhancements": "Planned Enhancements",
         "known-issues": "Known issues",
         "command-summary": "Command Summary"
       },
@@ -197,6 +199,20 @@
       "title": "John Doe's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/jonathan.md",
+      "headings": {
+        "project-portfolio-presentation-ppp": "Project Portfolio Presentation (PPP)",
+        "overview": "Overview",
+        "summary-of-contributions": "Summary of Contributions",
+        "code-contributions": "Code Contributions",
+        "contributions-to-the-user-guide-ug": "Contributions to the User Guide (UG)",
+        "contributions-to-the-developer-guide-dg": "Contributions to the Developer Guide (DG)",
+        "team-based-contributions": "Team-Based Contributions",
+        "contributions-beyond-the-project-team": "Contributions Beyond the Project Team"
       },
       "headingKeywords": {}
     },
