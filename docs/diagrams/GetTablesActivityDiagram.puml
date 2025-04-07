@@ -26,4 +26,4 @@ else (no)
 endif
 
 stop
-@enduml 
+@enduml
