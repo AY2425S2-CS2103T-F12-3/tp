@@ -1,0 +1,29 @@
+@startuml
+start
+
+:User enters command
+"getTables";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  if (Wedding set?) then (yes)
+    :Retrieve all tables from wedding;
+    if (Tables exist?) then (yes)
+      :Format table information:
+      - Table ID
+      - Capacity
+      - Number of guests;
+      :Display formatted list;
+    else (no)
+      :Display "No tables found" message;
+    endif
+  else (no)
+    :Display "No current wedding set" error;
+  endif
+else (no)
+  :Display "Invalid command format" error;
+endif
+
+stop
+@enduml 

@@ -1,0 +1,33 @@
+@startuml
+start
+
+:User enters command
+"findTable tid/1";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  :Extract Table ID;
+  if (Valid Table ID?) then (yes)
+    if (Wedding set?) then (yes)
+      if (Table exists?) then (yes)
+        :Retrieve table details;
+        :Display table information:
+        - Table ID
+        - Capacity
+        - Number of guests;
+      else (no)
+        :Display "Table not found" error;
+      endif
+    else (no)
+      :Display "No current wedding set" error;
+    endif
+  else (no)
+    :Display "Invalid table ID" error;
+  endif
+else (no)
+  :Display "Invalid command format" error;
+endif
+
+stop
+@enduml 

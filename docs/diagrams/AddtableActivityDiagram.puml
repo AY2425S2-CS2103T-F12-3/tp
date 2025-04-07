@@ -1,0 +1,35 @@
+@startuml
+start
+
+:User enters command
+"addTable tid/1 c/4";
+
+:Parse command;
+
+if (Command format valid?) then (yes)
+  :Extract Table ID and capacity;
+  if (Valid Table ID?) then (yes)
+    if (Table ID unique?) then (yes)
+      if (Valid capacity?) then (yes)
+        if (Wedding set?) then (yes)
+          :Create new Table object;
+          :Add table to wedding;
+          :Display success message;
+        else (no)
+          :Display "No current wedding set" error;
+        endif
+      else (no)
+        :Display "Please input a valid number" error;
+      endif
+    else (no)
+      :Display "Table ID already exists" error;
+    endif
+  else (no)
+    :Display "Please input a valid number" error;
+  endif
+else (no)
+  :Display "Invalid command format" error;
+endif
+
+stop
+@enduml
