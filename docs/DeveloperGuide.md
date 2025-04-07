@@ -155,27 +155,6 @@ Classes used by multiple components are in the `seedu.address.commons` package.
 
 ## **Implementation**
 
-This section describes some noteworthy details on how certain features are implemented.
-
-### `addPersonToTable` Command
-
-The `addPersonToTable`  allows a user to assign a specific guest to a specific table within the currently active wedding.
-
-The implementation involves several validation steps:
-- Checking that the input format is correct
-- Checking that the specified person exists in the current guest list
-- Checking that the table exists
-- Ensuring the table has available capacity
-
-Once all conditions are met, the guest is assigned to the table and the system state is saved.
-
-The activity diagram below illustrates the control flow of this command
-
-<puml src="diagrams/AddPersonToTableActivityDiagram.puml" width="600" alt="Activity diagram for addPersonToTable command" />
-
-
-
-
 ### `addPerson` Command
 The `addPerson` command allows a user to add a guest to the currently active wedding's guest list. This command is essential for wedding planners to build and manage their client's guest list.
 
@@ -239,6 +218,81 @@ This filtering functionality helps wedding planners efficiently organize guests 
 
 <div style="page-break-after: always;"></div>
 
+### `addTable` Command
+The `addTable` command allows users to add a new table to the currently active wedding with a specified table ID and capacity.
+
+The implementation involves two main components:
+
+1. **Command Parser (`AddTableCommandParser`)**
+   - Validates the command format and required prefixes (tid/ and c/)
+   - Extracts and parses the table ID and capacity values
+   - Creates a new `AddTableCommand` object with the parsed values
+
+2. **Command Execution (`AddTableCommand`)**
+   - Validates that there is a current wedding set
+   - Creates a new `Table` object with the specified ID and capacity
+   - Attempts to add the table to the wedding
+   - Handles various exceptions:
+     - `DuplicateTableException`: If a table with the same ID already exists
+     - `NoCurrentWeddingException`: If no wedding is currently set
+     - `IllegalArgumentException`: If the table ID or capacity is invalid
+
+The activity diagram below illustrates the control flow of this command:
+
+<puml src="diagrams/AddTableActivityDiagram.puml" alt="Activity Diagram for AddTable Command" />
+
+This command is essential for wedding planners to set up the initial table layout for their events.
+
+<div style="page-break-after: always;"></div>
+
+### `deleteTable` Command
+The `deleteTable` command allows users to remove a table from the currently active wedding using its table ID.
+
+The implementation involves two main components:
+
+1. **Command Parser (`DeleteTableCommandParser`)**
+   - Supports two formats:
+     - Prefixed format: `deleteTable tid/1`
+     - Raw format: `deleteTable 1`
+   - Validates the table ID format and value
+   - Creates a new `DeleteTableCommand` object
+
+2. **Command Execution (`DeleteTableCommand`)**
+   - Validates that there is a current wedding set
+   - Attempts to delete the table with the specified ID
+   - Handles exceptions:
+     - `TableNotFoundException`: If the table doesn't exist
+     - `NoCurrentWeddingException`: If no wedding is currently set
+
+The activity diagram below illustrates the control flow of this command:
+
+<puml src="diagrams/DeleteTableActivityDiagram.puml" alt="Activity Diagram for DeleteTable Command" />
+
+This command helps wedding planners manage their table arrangements by removing tables that are no longer needed.
+
+<div style="page-break-after: always;"></div>
+
+This section describes some noteworthy details on how certain features are implemented.
+
+### `addPersonToTable` Command
+
+The `addPersonToTable`  allows a user to assign a specific guest to a specific table within the currently active wedding.
+
+The implementation involves several validation steps:
+- Checking that the input format is correct
+- Checking that the specified person exists in the current guest list
+- Checking that the table exists
+- Ensuring the table has available capacity
+
+Once all conditions are met, the guest is assigned to the table and the system state is saved.
+
+The activity diagram below illustrates the control flow of this command
+
+<puml src="diagrams/AddPersonToTableActivityDiagram.puml" width="600" alt="Activity diagram for addPersonToTable command" />
+This command assigns a guest to a specific table in the active wedding.
+
+<div style="page-break-after: always;"></div>
+
 ### `deletePersonFromTable` Command
 The `deletePersonFromTable` command allows users to remove a person from their assigned table in the currently active wedding. This feature helps wedding planners manage seating arrangements efficiently when plans change.
 
@@ -260,6 +314,60 @@ This command is useful when guests need to be reassigned to different tables or 
 
 <div style="page-break-after: always;"></div>
 
+### `findTable` Command
+The `findTable` command allows users to search for a specific table in the currently active wedding using its table ID.
+
+The implementation involves two main components:
+
+1. **Command Parser (`FindTableCommandParser`)**
+   - Validates that the input starts with "tid/"
+   - Parses the table ID value
+   - Creates a new `FindTableCommand` object
+
+2. **Command Execution (`FindTableCommand`)**
+   - Validates that there is a current wedding set
+   - Searches for the table with the specified ID
+   - Displays the table's details including:
+     - Table ID
+     - Capacity
+     - Number of assigned guests
+   - Handles exceptions:
+     - `TableNotFoundException`: If the table doesn't exist
+     - `NoCurrentWeddingException`: If no wedding is currently set
+
+The activity diagram below illustrates the control flow of this command:
+
+<puml src="diagrams/FindTableActivityDiagram.puml" alt="Activity Diagram for FindTable Command" />
+
+This command is useful for quickly locating specific tables in large wedding layouts.
+
+<div style="page-break-after: always;"></div>
+
+### `getTables` Command
+The `getTables` command allows users to view all tables in the currently active wedding.
+
+The implementation involves two main components:
+
+1. **Command Parser (`GetAllTablesCommandParser`)**
+   - Validates that no arguments are provided
+   - Creates a new `GetAllTablesCommand` object
+
+2. **Command Execution (`GetAllTablesCommand`)**
+   - Validates that there is a current wedding set
+   - Retrieves all tables from the wedding
+   - Displays each table's details including:
+     - Table ID
+     - Capacity
+     - Number of guests currently assigned
+     - List of assigned guests (if any)
+   - Handles exceptions:
+     - `NoCurrentWeddingException`: If no wedding is currently set
+
+The activity diagram below illustrates the control flow of this command:
+
+<puml src="diagrams/GetTablesActivityDiagram.puml" alt="Activity Diagram for GetTables Command" />
+
+This command provides an overview of the entire table arrangement, helping wedding planners manage their seating plans effectively.
 
 ### \[Proposed\] Undo/redo feature
 
@@ -999,4 +1107,3 @@ Removes a person from a table in the currently active wedding.
 ## **Appendix: Planned Enhancements**
 
 Team size: 5
-
