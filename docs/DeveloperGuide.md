@@ -15,9 +15,6 @@ pageNav: 3
 - The project is based on the AddressBook-Level3 project created by the SE-EDU initiative
 - Github CoPilot was used by Bhavina Sathish Kumar to write trivial test cases and the JavaDocs for some trivial methods
 
-
-_{ list here sources of all reused/adapted ideas, code, documentation, and third-party libraries -- include links to the original source as well }_
-
 --------------------------------------------------------------------------------------------------------------------
 
 ## **Setting up, getting started**
@@ -38,7 +35,7 @@ Given below is a quick overview of main components and how they interact with ea
 
 **Main components of the architecture**
 
-**`Main`** (consisting of classes [ `Main` ](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/Main.java) and [ `MainApp` ](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/MainApp.java)) is in charge of the app launch and shut down.
+**`Main`** (consisting of classes [ `Main` ](https://github.com/AY2425S2-CS2103T-F12-3/tp/tree/master/src/main/java/seedu/address/Main.java) and [ `MainApp` ](https://github.com/AY2425S2-CS2103T-F12-3/tp/tree/master/src/main/java/seedu/address/MainApp.java)) is in charge of the app launch and shut down.
 * At app launch, it initializes the other components in the correct sequence, and connects them up with each other.
 * At shut down, it shuts down the other components and invokes cleanup methods where necessary.
 
@@ -70,13 +67,13 @@ The sections below give more details of each component.
 
 ### UI component
 
-The **API** of this component is specified in [ `Ui.java` ](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/ui/Ui.java)
+The **API** of this component is specified in [ `Ui.java` ](https://github.com/AY2425S2-CS2103T-F12-3/tp/tree/master/src/main/java/seedu/address/ui/Ui.java)
 
 <puml src="diagrams/UiClassDiagram.puml" alt="Structure of the UI Component"/>
 
 The UI consists of a `MainWindow` that is made up of parts e.g. `CommandBox`, `ResultDisplay`, `PersonListPanel`, `StatusBarFooter` etc. All these, including the `MainWindow`, inherit from the abstract `UiPart` class which captures the commonalities between classes that represent parts of the visible GUI.
 
-The `UI` component uses the JavaFx UI framework. The layout of these UI parts are defined in matching `.fxml` files that are in the `src/main/resources/view` folder. For example, the layout of the [ `MainWindow` ](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/ui/MainWindow.java) is specified in [ `MainWindow.fxml` ](https://github.com/se-edu/addressbook-level3/tree/master/src/main/resources/view/MainWindow.fxml)
+The `UI` component uses the JavaFx UI framework. The layout of these UI parts are defined in matching `.fxml` files that are in the `src/main/resources/view` folder. For example, the layout of the [ `MainWindow` ](https://github.com/AY2425S2-CS2103T-F12-3/tp/tree/master/src/main/java/seedu/address/ui/MainWindow.java) is specified in [ `MainWindow.fxml` ](https://github.com/AY2425S2-CS2103T-F12-3/tp/tree/master/src/main/resources/view/MainWindow.fxml)
 
 The `UI` component,
 
@@ -87,7 +84,7 @@ The `UI` component,
 
 ### Logic component
 
-**API**: [ `Logic.java` ](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/logic/Logic.java)
+**API**: [ `Logic.java` ](https://github.com/AY2425S2-CS2103T-F12-3/tp/tree/master/src/main/java/seedu/address/logic/Logic.java)
 
 Here's a (partial) class diagram of the `Logic` component:
 
@@ -119,7 +116,7 @@ How the parsing works:
 
 ### Model component
 
-**API**: [ `Model.java` ](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/model/Model.java)
+**API**: [ `Model.java` ](https://github.com/AY2425S2-CS2103T-F12-3/tp/tree/master/src/main/java/seedu/address/model/Model.java)
 
 <puml src="diagrams/ModelClassDiagram.puml" width="450" />
 
@@ -136,7 +133,7 @@ The `Model` component,
 
 ### Storage component
 
-**API**: [ `Storage.java` ](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/storage/Storage.java)
+**API**: [ `Storage.java` ](https://github.com/AY2425S2-CS2103T-F12-3/tp/tree/master/src/main/java/seedu/address/storage/Storage.java)
 
 <puml src="diagrams/StorageClassDiagram.puml" width="550" />
 
@@ -173,8 +170,6 @@ The activity diagram below illustrates the control flow of this command
 
 This command is useful for creating a new wedding to keep track of if the user has to manage another wedding.
 
-<div style="page-break-after: always;"></div>
-
 ### `setWedding` Command
 
 The `setWedding`  allows a user to set a wedding as the 'current' wedding to display in the GUI and manipulate the data of.
@@ -205,8 +200,6 @@ This command is useful for choosing which wedding the user wants to see and edit
     4. **Fresh Start**: Each session begins with a clean slate, reducing the chance of confusion from previous sessions.
     5. **Intentional Workflow**: Encourages users to be deliberate about which wedding they are working on.
 
-<div style="page-break-after: always;"></div>
-
 ### `weddingOverview` Command
 
 The `weddingOverview`  allows a user to get a quick overview of the currently selected wedding.
@@ -225,8 +218,6 @@ The activity diagram below illustrates the control flow of this command
 
 This command is useful for getting a quick overview of the currently set wedding.
 
-<div style="page-break-after: always;"></div>
-
 ### `deleteWedding` Command
 
 The `deleteWedding`  allows a user to delete a wedding that has been previously stored from the system.
@@ -243,8 +234,6 @@ The activity diagram below illustrates the control flow of this command
 <puml src="diagrams/DeleteWeddingActivityDiagram.puml" width="600" alt="Activity diagram for deleteWedding command" />
 
 This command is useful when a wedding has already happened and no longer needs to be managed.
-
-<div style="page-break-after: always;"></div>
 
 ### `addPerson` Command
 
@@ -265,8 +254,6 @@ The sequence diagram below illustrates how the `addPerson` command is processed:
 <puml src="diagrams/AddPersonActivityDiagram.puml" alt="Sequence Diagram for AddPerson Command" />
 
 This command follows the Command pattern, where the `AddPersonCommand` encapsulates a request as an object, allowing for parameterization of clients with different requests and queue or log requests.
-
-<div style="page-break-after: always;"></div>
 
 ### `deletePerson` Command
 
@@ -289,8 +276,6 @@ The activity diagram below illustrates the control flow of this command:
 
 This command supports the need for wedding planners to be able to update guest lists as clients make changes to their wedding plans.
 
-<div style="page-break-after: always;"></div>
-
 ### `filterPersons` Command
 
 The `filterPersons` command allows users to filter the guest list based on dietary restrictions and/or RSVP status. This feature is particularly useful for wedding planners who need to quickly identify specific groups of guests, such as those with special dietary needs or those who have not yet responded to invitations.
@@ -309,8 +294,6 @@ The activity diagram below illustrates the control flow of this command:
 <puml src="diagrams/FilterPersonsActivityDiagram.puml" alt="Activity Diagram for FilterPersons Command" />
 
 This filtering functionality helps wedding planners efficiently organize guests by important attributes, allowing for better catering planning and follow-up on outstanding RSVPs.
-
-<div style="page-break-after: always;"></div>
 
 ### `addTable` Command
 
@@ -334,8 +317,6 @@ The activity diagram below illustrates the control flow of this command:
 
 This command helps wedding planners set up the layout of tables in preparation for seating guests.
 
-<div style="page-break-after: always;"></div>
-
 ### `deleteTable` Command
 
 The `deleteTable` command allows users to remove a table from the currently active wedding using its table ID.
@@ -355,10 +336,6 @@ The activity diagram below illustrates the control flow of this command:
 
 This command ensures that seating arrangements stay flexible and reflect any changes to the event setup.
 
-<div style="page-break-after: always;"></div>
-
-This section describes some noteworthy details on how certain features are implemented.
-
 ### `addPersonToTable` Command
 
 The `addPersonToTable`  allows a user to assign a specific guest to a specific table within the currently active wedding.
@@ -376,9 +353,8 @@ The activity diagram below illustrates the control flow of this command
 <puml src="diagrams/AddPersonToTableActivityDiagram.puml" width="600" alt="Activity diagram for addPersonToTable command" />
 This command assigns a guest to a specific table in the active wedding.
 
-<div style="page-break-after: always;"></div>
-
 ### `deletePersonFromTable` Command
+
 The `deletePersonFromTable` command allows users to remove a person from their assigned table in the currently active wedding. This feature helps wedding planners manage seating arrangements efficiently when plans change.
 
 The implementation involves several key steps and validation checks:
@@ -396,8 +372,6 @@ The activity diagram below illustrates the control flow of this command:
 <puml src="diagrams/DeletePersonFromTableActivityDiagram.puml" alt="Activity Diagram for DeletePersonFromTable Command" />
 
 This command is useful when guests need to be reassigned to different tables or when a guest cancels their attendance but the planner wishes to retain their information in the guest list without a table assignment.
-
-<div style="page-break-after: always;"></div>
 
 ### `findTable` Command
 
@@ -420,8 +394,6 @@ The activity diagram below illustrates the control flow of this command:
 
 This command helps planners retrieve specific table information quickly when managing large weddings.
 
-<div style="page-break-after: always;"></div>
-
 ### `getTables` Command
 
 The `getTables` command allows users to retrieve and view all tables in the currently active wedding.
@@ -442,8 +414,6 @@ The activity diagram below illustrates the control flow of this command:
 <puml src="diagrams/GetTablesActivityDiagram.puml" alt="Activity Diagram for GetTables Command" />
 
 This command provides an overview of the entire table arrangement, helping wedding planners manage their seating plans effectively.
-
-<div style="page-break-after: always;"></div>
 
 --------------------------------------------------------------------------------------------------------------------
 

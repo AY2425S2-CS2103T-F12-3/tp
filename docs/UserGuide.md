@@ -484,6 +484,7 @@ Finds a table by its ID.
 
 **Example:**
 - Running `findTable tid/12`  searches and displays the table with the id 12.
+
 ## Assigning a Guest to a Table
 
 ### Adding a Guest to a Table: `addPersonToTable`
